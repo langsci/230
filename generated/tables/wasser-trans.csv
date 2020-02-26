@@ -1,0 +1,11 @@
+"FALSE"	"TRUE"	"Sum"
+"Wasser, Gewässer, Meer"	8	4	12
+"Wasser, Meer"	0	1	1
+"Wasser"	23	9	32
+"Wasser, Gewässer"	2	1	3
+"Wasser, Gewässer, Bach"	0	1	1
+"Wasser, Gewässer, Fluß"	1	1	2
+"Wasser, Gewässer, Meer, Fluss"	0	1	1
+"Wasser, Gewässer, Meer, Fluss,"	1	0	1
+"Wasser, Teich"	2	0	2
+"Sum"	37	18	55

@@ -1,0 +1,11 @@
+lemma	trans	bel	freq	freq_art	rel
+ewawart	Hohepriester	kon_mensch	7	7	1
+folk	Volk	unklar_abst/kon_mensch	7	4	0,57
+gëba	Gabe, Geschenk, Spende	abst_kon	5	3	0,6
+kuning	König	kon_mensch	5	3	0,6
+liut	Leute, Mensch	kon_mensch	5	3	0,6
+herizoho	Heerführer, Statthalter	kon_mensch	4	4	1
+ackar	Acker, Feld	kon_ort	4	2	0,5
+boum	Baum	kon	4	2	0,5
+brutigomo	Bräutigam	kon_mensch	4	2	0,5
+wëg	Weg, Straße	kon_ort	4	2	0,5
