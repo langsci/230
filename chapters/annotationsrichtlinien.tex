@@ -377,10 +377,10 @@ Die Token entstammen beim Isidor dem lateinischen Text des Referenzkorpus Altdeu
 In der Spalte \object{latein} wird dokumentiert, ob es Abweichungen in der lateinischen Vorlage im Vergleich zur ahd. Übersetzung gibt und wenn ja, um was für eine Abweichung es sich handelt. Wenn also bspw. in der Spalte ein \object{nach} annotiert ist, dann bedeutet dies, dass das Token im Lateinischen dem Kopf nachgestellt ist. Es werden nur Abweichung in Bezug auf die NP annotiert (Stellung der Phrase im Satz gilt nicht als Abweichung), s. Tabelle \ref{tab:lat-abweichung}}. Wenn keine Abweichung vorliegt, wird der Beleg mit \object{keine.abw} annotiert. 
 
 
-\begin{table}[h!]
+\begin{table}[h]
 \centering
-\begin{tabular}{@{}lp{11cm}@{}}
-\toprule
+\begin{tabular}{lp{11cm}}
+\lsptoprule
 \textbf{Annotation}  & \textbf{Erklärung}\\ \midrule
 kein.dem             & ein \object{dër} wurde eingefügt, ohne dass ein lateinisches Demonstrativum als Vorlage dient.\\
 nach                 & das lateinische Element ist dem Kopf nachgestellt\\
@@ -392,7 +392,7 @@ token.mehr           & in der Vorlage existiert ein Token, das im Ahd. nicht üb
 token.diff\_keine.pp & im Lateinischen gibt es keine PP, die der ahd. PP entspricht. Was in der Vorlage steht, kann der Variablen \hervor{latein.vorlage} entnommen werden.\\
 pos\_partizip        & das ahd. N bezieht sich auf ein lateinisches Token, das einer anderen Wortart entspricht; hier ein Partizip.\\
 flex\_akkusativ      & das ahd. N bezieht sich auf ein lateinische Token, das eine andere Flexion hat; hier: Token steht im Akkusativ.\\
-syn.fkt\_subjekt     & das ahd. N bezieht sich auf ein lateinische Token, das eine andere syntaktische Funktion hat; hier: Subjekt\\\bottomrule
+syn.fkt\_subjekt     & das ahd. N bezieht sich auf ein lateinische Token, das eine andere syntaktische Funktion hat; hier: Subjekt\\\lspbottomrule
 \end{tabular}
 \caption{Annotationsmöglichkeiten Differenzbelege (Spalte \object{lat.abweichung})}
 \label{tab:lat-abweichung}
@@ -416,8 +416,8 @@ Ergänzungen der NP (Determinierer, Attribute) werden einzeln annotiert, um leic
 \begin{table}[h!]
 \centering
 
-\begin{tabular}{@{}lp{11cm}@{}}
-\toprule
+\begin{tabular}{lp{11cm}}
+\lsptoprule
 \textbf{Variable} & \textbf{Ausprägungen}\\\midrule
 id.ther           & Angabe der ID von \object{dër}; wenn nicht vorhanden: nein\\
 id.np.attr        & Angabe der ID von nominalen Attributen (meist sind es Genitivattribute); wenn nicht vorhanden: nein\\
@@ -427,7 +427,7 @@ id.zahl           & Angabe der ID von modifizierenden Zahlwörtern (CARD); wenn 
 id.demonstr       & Angabe der ID von zusammengestetzen Demonstrativartikeln (dëser); 
  wenn nicht vorhanden: \object{nein}\\
 id.andere.mod     & Angabe der ID von weiteren Modifizierern des Kopfes, z.B. Fragewörtern, demonstratives sëlb- oder \object{sum}; wenn nicht vorhanden: nein\\
-id.rel.pro.nach   & Angabe der ID von Relativpronomen, die einen attributiven Relativsatz (zur NP) einleiten;  wenn nicht vorhanden: nein\\\bottomrule
+id.rel.pro.nach   & Angabe der ID von Relativpronomen, die einen attributiven Relativsatz (zur NP) einleiten;  wenn nicht vorhanden: nein\\\lspbottomrule
 \end{tabular}
 \caption{Annotationsmöglichkeiten (NP-Struktur)}
 \end{table}
