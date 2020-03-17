@@ -113,7 +113,18 @@ Das \object{Constraint} bezieht sich auf die Belebtheitshierarchie aus \REF{ex:e
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=5cm]{images/enger-hierarchie.jpg}
+% \includegraphics[width=5cm]{images/enger-hierarchie.jpg}
+\begin{forest}
+[{(Proper Names)}
+  [Humans
+    [Animals
+      [Inanimate tangible objects
+       [Abstractions and masses]
+      ]
+    ]
+  ]
+]
+\end{forest}
 \caption {Die Belebtheitshierarchie nach \textcite{Enger2011}}
 \label{enger}
 \end{center}
