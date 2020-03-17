@@ -10,7 +10,7 @@ An Abbildung \ref{wals} aus dem \hervor{World Atlas of Language Structures (WALS
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=10 cm]{images/wals.jpg}
+  \includegraphics[width=\textwidth]{images/wals.jpg}
 \caption {Definitartikel in den Sprachen Europas \parencite{Dryer2013}}
 \label{wals}
 \end{center}
@@ -35,11 +35,16 @@ In der Forschung wurden einige Modelle vorgeschlagen, die einerseits die Entwick
 Greenbergs \blockcquote[63]{Greenberg1978}{cycle of definite article} umfasst vier Stufen, welche in Abbildung \ref{abb:greenberg} \parencite[entnommen aus][525]{deMulder2011} wiedergegeben sind \parencite[vgl. auch][]{vanGelderen2007}. 
 
 \begin{figure}
-\begin{center}
-  \includegraphics[width=9.5cm]{images/greenberg.jpg}
-\caption {Der Definitheitszyklus nach \textcite{Greenberg1978}}
-\label{abb:greenberg}
-\end{center}
+%   \includegraphics[width=9.5cm]{images/greenberg.jpg}
+  \begin{tikzpicture}[row 2/.style={font=\scshape}]
+  \matrix (greenberg) [inner sep=0pt,matrix of nodes,row sep=.33cm,column sep=\tabcolsep]
+    {
+      Stage 0 & & Stage I & & Stage II && Stage III\\
+      demonstrative & > & definite article & > & specific article & > & noun marker\\
+    };
+  \draw[-{Triangle[]}] (greenberg.west) -- (greenberg.east);
+  \end{tikzpicture}
+\caption {Der Definitheitszyklus nach \textcite{Greenberg1978}\label{abb:greenberg}}
 \end{figure}
 
 Die Skala korreliert mit einem Abbau der Referentialität: Aus einem anaphorisch gebrauchten Demonstrativ (Stage 0) wird ein Definitartikel, der dazu beiträgt, Referenten als identifizierbar zu kennzeichnen (Stage I). In der nächsten Stufe erfolgt die Ausweitung auf spezifische, aber nicht identifizierbare Referenten (Stage II). Damit dringt der Definitartikel in das Arbeitsfeld der Indefinita. Am Ende spielt die Referentialität keine Rolle mehr: Der Artikel fungiert entweder als bloßer Genusmarker oder -- und dies ist der Fall, wenn der ursprüngliche Demonstrativ das Nomen nicht nach Genus klassifiziert hat, als Marker der Nominalität \parencite[69]{Greenberg1978} (Stage III). In dieser Rolle dient er bspw. dazu, deverbale Nomen zu kennzeichnen. Die Entwicklung wird in der Regel begleitet von einem graduellen phonetischen Schwund, so dass es schließlich zur Affigierung kommen kann und der Zyklus von Neuem beginnt. In vielen germanischen Sprachen erfährt das ursprüngliche Demonstrativ bereits eine erneute formale Stärkung \parencite[302ff.]{vanGelderen2007}. Häufig wird die deiktische Komponente mit Hilfe von Lokaladverbien neu aufgebaut, so auch im Deutschen (\object{der da, das hier}) \parencite{Diessel1999}.
@@ -71,6 +76,7 @@ Zudem müsste die letzte Entwicklungstufe (Stage III) weiter ausdifferenziert we
 Im Gegensatz zu Greenbergs Modell, das die Frühphase der Artikelentwicklung kaum thematisiert, setzt die darauf aufbauende Skala von \textcite{Lehmann2015} eine Stufe zwischen  Demonstrativ- und Definitartikel an und eröffnet damit Raum für Diskussionen, wie der kategoriale Wandel ablaufen könnte. Lehmann selbst kommentiert diesen Aspekt allerdings nur relativ kurz, indem er anmerkt:\hervor{[T]he demonstrative component is gradually reduced to mere definiteness, and the result is a definite article} \parencite[41]{Lehmann2015}. Sein Modell ist in Abbildung \ref{abb:lehmann} wiedergegeben. 
 
 \begin{figure}
+\todo[inline]{Check where this graph comes from}
 \begin{center}
 \smartdiagramset{border color=black,
 set color list={white,white,white,white,white},
@@ -138,16 +144,16 @@ Die Lehmannschen Grammatikalisierungsparameter sind für die erst genannte  Fors
 	>{\raggedright\arraybackslash}p{2,75cm}
 }
 \lsptoprule
-& \multicolumn{3}{c}{\textbf{Grammatikalisierungsgrad}}\\
-                   & \multicolumn{1}{c}{\textbf{niedrig}}& & \multicolumn{1}{c}{\textbf{hoch}}\\
+& \multicolumn{3}{c}{{Grammatikalisierungsgrad}}\\
+                   & \multicolumn{1}{c}{{niedrig}}& & \multicolumn{1}{c}{{hoch}}\\
 \cmidrule(lr){2-4}
-\textbf{Parameter} & & \textbf{Prozess}   &                   \\ \midrule
-\textbf{Paradigmatizität}            & Zeichen gehört zu losem Wortfeld                         & Paradigmatisierung & Zeichen gehört zu hochintegriertem Paradigma                     \\
-\textbf{Wählbarkeit}                 & Zeichen ist nach kommunikativen Absichten frei wählbar   & Obligatorisierung  & Wahl des Zeichens ist beschränkt bzw. obligatorisch              \\
-\textbf{Integrität}                  & Bündel semantischer Merkmale; evtl. mehrsilbig           & Erosion            & grammatische Merkmale; oligo- oder monosegmental                 \\
-\textbf{Fügungsenge}                 & Zeichen ist unabhängig juxtaponiert                      & Koaleszenz         & Zeichen ist Affix oder bloß phonologische Eigenschaft des Trägers \\
-\textbf{Stellungsfreiheit}           & Zeichen ist frei umstellbar                              & Fixierung          & Zeichen besetzt feste Position                                   \\
-\textbf{Skopus}                      & Zeichen bezieht sich auf Syntagma beliebiger Komplexität & Kondensierung      & Zeichen modifiziert Stamm                                        \\ \lspbottomrule
+{Parameter} & & {Prozess}   &                   \\ \midrule
+{Paradigmatizität}            & Zeichen gehört zu losem Wortfeld                         & Paradigmatisierung & Zeichen gehört zu hochintegriertem Paradigma                     \\
+{Wählbarkeit}                 & Zeichen ist nach kommunikativen Absichten frei wählbar   & Obligatorisierung  & Wahl des Zeichens ist beschränkt bzw. obligatorisch              \\
+{Integrität}                  & Bündel semantischer Merkmale; evtl. mehrsilbig           & Erosion            & grammatische Merkmale; oligo- oder monosegmental                 \\
+{Fügungsenge}                 & Zeichen ist unabhängig juxtaponiert                      & Koaleszenz         & Zeichen ist Affix oder bloß phonologische Eigenschaft des Trägers \\
+{Stellungsfreiheit}           & Zeichen ist frei umstellbar                              & Fixierung          & Zeichen besetzt feste Position                                   \\
+{Skopus}                      & Zeichen bezieht sich auf Syntagma beliebiger Komplexität & Kondensierung      & Zeichen modifiziert Stamm                                        \\ \lspbottomrule
 \end{tabular}
 \caption{Parameter und Prozesse der Grammatikalisierung \parencite[1255]{Lehmann1995}}
 \label{tab:lehmann-parameter-prozess}
@@ -199,11 +205,27 @@ Um der Entwicklung des Definitartikels im Deutschen auf den Grund zu gehen, erha
 In der Konstruktionsgrammatik wird davon ausgegangen, dass sich das Inventar einer Sprache vollständig über Form-Bedeutungspaare, die Konstruktionen, erfassen lässt. Form und Bedeutung gehen eine (zumindest partiell) arbiträre und damit symbolische Beziehung ein \parencite[257]{Croft2004}. Zur Bedeutungsseite gehören dabei auch pragmatische und diskurs-funktionale Eigenschaften, s. Abb \ref{abb:croft-construction}.  
 
 \begin{figure}
-\begin{center}
-  \includegraphics[width=9cm]{images/croft-construction-neu.jpg}
-\caption {Symbolische Struktur einer Konstruktion  \parencite[18]{Croft2002}}
-\label{abb:croft-construction}
-\end{center}
+% %   \includegraphics[width=9cm]{images/croft-construction-neu.jpg}
+  \begin{tikzpicture}
+  \node at (0,0) [draw,text width=7cm,align=center] (Eig1) 
+    {Syntaktische Eigenschaften\\Morphologische Eigenschaften\\Phonologische Eigenschaften};
+  \node [,draw, below=2\baselineskip of Eig1,text width=7cm,align=center] (Eig2) 
+    {Semantische Eigenschaften\\Pragmatische Eigenschaften\\Diskursfunktionale Eigenschaften};
+  \draw[dotted,thick] (Eig1) -- (Eig2) node[midway,name=midway] {};
+  \node [draw,inner sep=.33cm,fit=(Eig1) (Eig2)] (konstr) {};
+  \node [inner sep=0pt,right=.5cm of konstr.30] (Konstruktion) {Konstruktion};
+  \path let \p1 = (Konstruktion.west), \p2  = (Eig1) in node [inner sep=0pt,anchor=west] at (\x1,\y2)
+    (Form) {Form};
+  \path let \p1 = (Konstruktion.west), \p2  = (midway) in node [text width=5cm,inner sep=0pt,anchor=west] at (\x1,\y2)
+    (Korrespondenz) {symbolische\\Korrespondenz};
+  \path let \p1 = (Konstruktion.west), \p2  = (Eig2) in node [text width=5cm,inner sep=0pt,anchor=west] at (\x1,\y2)
+    (Bedeutung) {(konventionalisierte)\\Bedeutung};
+  \draw[-{Triangle[]}] (Konstruktion.west) -- (konstr.30);
+  \draw[-{Triangle[]}] (Form) -- (Eig1);
+  \draw[-{Triangle[]}] (Korrespondenz) -- (midway);
+  \draw[-{Triangle[]}] (Bedeutung) -- (Eig2);
+  \end{tikzpicture}
+\caption {Symbolische Struktur einer Konstruktion  \parencite[18]{Croft2002}\label{abb:croft-construction}}
 \end{figure} 
 
  
@@ -219,40 +241,48 @@ Grammatik und Lexikon einer Sprache sind keine autonomen Bereiche, sondern bilde
 Die Konstruktionen formen ein taxonomisch organisiertes Netzwerk, das sog. \object{Konstruktikon} \parencite{Ziem2013}, in dem formal und/oder funktional ähnliche Konstruktionen miteinander assoziiert sind \parencites()()[]{Langacker1987}[262ff.]{Croft2004}[]{Bybee2010}. Das Netzwerk ist dynamisch. Abhängig vom konkreten Sprachgebrauch können  Konstruktionen hinzukommen oder verschwinden. \textcite[17]{Traugott2013} unterscheiden dabei zwei Typen von Konstruktionen -- die \object{item}-spezifischen Mikrokonstruktionen und die hierarchisch übergeordneten Schemata, welche ggf. Subschemata enthalten können \parencite[s. auch][]{Traugott2015}. Die im Sprachgebrauch empirisch beobachtbaren Token werden \object{constructs} genannt.\footnote{Zur Unterscheidung von \object{constructions} und \object{constructs} s. u.a. \textcite[][423]{Fried2013}.} Abbildung \ref{abb:quant-schema} zeigt die Verlinkung dieser Ebenen am Beispiel des sog. \object{quantifier schema} \parencite[aus][17]{Traugott2013}. 
 
 \begin{figure}
-\begin{center}
-\scalebox{.6}{%
-\tikzstyle{inner} = [shape=rectangle, rounded corners, draw, align=center, text width=10em]
-\tikzstyle{level 1} = [sibling distance=10cm]
-\tikzstyle{level 2} = [sibling distance=5cm]
-\begin{tikzpicture}[level distance=2cm]
-  \node[inner] {Schema\\ (z.B.~quantifier schema)}
-    child { 
-    	node[inner] {Subschema\\ (z.B.~large quantity)}
-    	  child {
-    	  	node[inner] {Mikro\-konstruktion~1}
-    	  	  child {node {many}}
-    	  }
-    	  child {
-    	  	node[inner] {Mikrokonstruktion~2}
-    	  	  child {node {a lot of}}
-    	  }
-    } 
-    child {
-    	node[inner] {Subschema\\ (z.B. small quantity) }
-    	  child {
-    	  	node[inner] {Mikrokonstruktion~3}
-    	  	  child {node {few}}
-    	  }
-    	  child {
-    	  	node[inner] {Mikrokonstruktion~4}
-    	  	  child {node {a bit of}}
-    	  }
-    };
-\end{tikzpicture}
-}
+% % \tikzstyle{inner} = [shape=rectangle, rounded corners, draw, align=center, text width=10em]
+% % \tikzstyle{level 1} = [sibling distance=10cm]
+% % \tikzstyle{level 2} = [sibling distance=5cm]
+% % \begin{tikzpicture}[level distance=2cm]
+% %   \node[inner] {Schema\\ (z.B.~quantifier schema)}
+% %     child { 
+% %     	node[inner] {Subschema\\ (z.B.~large quantity)}
+% %     	  child {
+% %     	  	node[inner] {Mikro\-konstruktion~1}
+% %     	  	  child {node {many}}
+% %     	  }
+% %     	  child {
+% %     	  	node[inner] {Mikrokonstruktion~2}
+% %     	  	  child {node {a lot of}}
+% %     	  }
+% %     } 
+% %     child {
+% %     	node[inner] {Subschema\\ (z.B. small quantity) }
+% %     	  child {
+% %     	  	node[inner] {Mikrokonstruktion~3}
+% %     	  	  child {node {few}}
+% %     	  }
+% %     	  child {
+% %     	  	node[inner] {Mikrokonstruktion~4}
+% %     	  	  child {node {a bit of}}
+% %     	  }
+% %     };
+% % \end{tikzpicture}
+\resizebox{\textwidth}{!}{\begin{forest}
+ [Schema\\ (z.B.~quantifier schema),align=center,draw,rounded corners
+    [Subschema\\ (z.B.~large quantity),align=center,draw,rounded corners
+      [Mikrokonstruktion 1,draw,rounded corners [many]]
+      [Mikrokonstruktion 2,draw,rounded corners [a lot of]]
+    ]
+    [Subschema\\ (z.B. small quantity),align=center,draw,rounded corners
+      [Mikrokonstruktion 3,draw,rounded corners [few]]
+      [Mikrokonstruktion 4,draw,rounded corners [a bit of]]
+    ]
+ ]
+\end{forest}}
 \caption {Hierarchische Ordnung von Konstruktionen (\object{quantifier schema})} 
 \label{abb:quant-schema}
-\end{center}
 \end{figure}
  
 
@@ -303,15 +333,15 @@ was dazu führte, dass sich Definitheit als Nominalkategorie etablieren konnte. 
 \centering
 \caption{Determinierer im Althochdeutschen \parencite[163]{Oubouzar1997a}}
 \label{determinierer-oubouzar}
-\begin{tabular} {lllll}
+\begin{tabular} {llr@{ }rr@{ }lr}
 \lsptoprule
-& & \multicolumn{2}{c}{NG} & {det. NG} \\\cmidrule(lr){3-4}
-{Text} & {Zeit} & {mit Det. \object{der}} & {mit Possessivum} & {insgesamt} \\ 
-\midrule
-Isidor        & ca. 790                  & 245  Belege (45,1\%)    & 132 Belege (24,8\%)        & 532 Belege                 \\
-Tatian        & ca. 830                  & 582 Belege (44,7\%)     & 470 Belege (36,2\% )       & 1300 Belege                \\
-Otfrid        & ca. 870                  & 1318 Belege (53,9\%)    & 511 Belege (20,8\%)        & 2446 Belege                \\
-Notker        & ca. 1025                 & 998 Belege (55,1\%)     & 355 Belege (19,8\%)        & 1794 Belege                \\ \lspbottomrule
+& & \multicolumn{4}{c}{Belege für NG} & {det. NG} \\\cmidrule(lr){3-6}
+{Text} & {Zeit} & \multicolumn{2}{c}{mit Det. \object{der}} & \multicolumn{2}{c}{mit Possessivum} & {Bel. insgesamt} \\ 
+\midrule                                                          
+Isidor        & ca. 790     & 245  & (45,1\%)    & 132  & (24,8\%)        & 532    \\
+Tatian        & ca. 830     & 582  & (44,7\%)    & 470  & (36,2\%)       & 1300   \\
+Otfrid        & ca. 870     & 1318 & (53,9\%)    & 511  & (20,8\%)        & 2446   \\
+Notker        & ca. 1025    & 998  & (55,1\%)    & 355  & (19,8\%)        & 1794   \\ \lspbottomrule
 \end{tabular}
 \end{table}
 
@@ -369,14 +399,33 @@ Unter diesem erstmals von \textcite{Langacker1987} eingeführten Begriff versteh
 
 Für die kognitive Verfestigung (teil-)schematischer Konstruktionen, 
 etwa [\object{am} V-\object{en sein}] (Flick 2015) oder die Ditransitivkonstruktion [NP\textsubscript{Nom} V NP\textsubscript{Dat} NP\textsubscript{Acc}] (Goldberg 2006)ist ein hoher Gebrauch unterschiedlicher Types verantwortlich, da sich durch das wiederholte Parsen ein schematisches Muster als überdachende Abstraktion kognitiv einschleifen kann.\footnote{Es sei an dieser Stelle angemerkt, dass Frequenzwerte natürlich nur auf der Tokenebene gemessen werden können, d.h. es lassen sich keine Frequenzaussagen über die abstrakte Konstruktion [Definitartikel + N] machen, sondern nur über die konkret realisierten Mikrokonstruktionen, etwa \object{das Kind}.} 
-Der häufige Gebrauch spezifischer Token führt hingegen typischerweise zum Entrenchment von lexikalisch-spezifischen Konstruktionen. Dies ist z.B. bei Idiomen (\object{Hast du Tomaten auf den Augen?}), formelhaften Wendungen (\object{Im Namen des Vaters und des Sohnes und des heiligen Geistes}) oder auch irregulären Verbmustern der Fall. \textcite[103f.]{Ziem2013} folgend kann man hier verkürzt von Type- und Token-Entrenchment sprechen, vgl. Abbildung \ref{abb:type-token-entrechment}.
+Der häufige Gebrauch spezifischer Token führt hingegen typischerweise zum Entrenchment von lexikalisch-spe\-zi\-fisch\-en Konstruktionen. Dies ist z.B. bei Idiomen (\object{Hast du Tomaten auf den Augen?}), formelhaften Wendungen (\object{Im Namen des Vaters und des Sohnes und des heiligen Geistes}) oder auch irregulären Verbmustern der Fall. \textcite[103f.]{Ziem2013} folgend kann man hier verkürzt von Type- und Token-Entrenchment sprechen, vgl. Abbildung \ref{abb:type-token-entrechment}.
 
 \begin{figure}
-\begin{center}
-  \includegraphics[width=12cm]{images/type-token-entrenchment-neu-sw.jpg}
+% %   \includegraphics[width=12cm]{images/type-token-entrenchment-neu-sw.jpg}
+  \raggedright
+  \emph{Type-Entrenchment}: Gebrauch unterschiedlicher Token als Instanzen eines abstrakten Types\\
+  \begin{center}
+  \begin{forest} for tree={edge=dotted}
+  [\textit{dër} N,grow=west,l sep=1cm
+    [\textit{ther} N\textsubscript{1}]
+    [\textit{ther} N\textsubscript{2}]
+    [\textit{ther} N\textsubscript{3}]
+  ]
+  \end{forest}\hspace{1em}\parbox[t]{.5\textwidth}{\raggedright Folge: Herausbildung produktiver, grammatischer Konstruktionen}\\
+  \end{center}
+  \emph{Token-Entrechment}: Hohe Frequenz eines spezifischen Tokens\\
+  \begin{center}
+  \begin{forest} for tree={edge=dotted}
+  [\textit{dër heiligo gheist},grow=west,l sep=1cm
+    [\textit{ther heiligo gheist}]
+    [\textit{ther heiligo gheist}]
+    [\textit{ther heiligo gheist}]
+  ]
+  \end{forest}\hspace{1em}\parbox[t]{.4\textwidth}{\raggedright Folge: Herausbildung fester, lexikalischer Konstruktionen}\\
+  \end{center}
 \caption {Type- und Token-Entrenchment} 
 \label{abb:type-token-entrechment}
-\end{center}
 \end{figure} 
 
 Indirekt kann allerdings auch Token-Entrenchment die Ausbildung von schematischen Konstruktionen beeinflussen. So geht bspw. \textcite[96]{Bybee2010} davon aus, dass spezifische Konstruktionen Vorbild für parallel strukturierte Ausdrücke sein können und damit eine Schematisierung ankurbeln. Sie demonstriert am Beispiel der spanischen Konstruktion \object{quedarse} + Adjektiv, dass die generellere, schematische  Konstruktion über analogische Prozesse aus einem einzelnen Vorbild (dem Typ \object{quedarse sólo}) entstanden ist \parencite[72]{Bybee2010}. In Bezug auf die Herausbildung von [Definitartikel + N] kann man postulieren, dass frühe Kollokationen mit \object{dër} sich positiv auf den funktionalen Wandel von Demonstrativ- zu Definitartikel auswirken. So ist aus bisherigen Untersuchungen \parencite{Oubouzar1992} bekannt, dass eindeutig identifizierbare Referenten wie  z.B. \object{heilant} als Übersetzung von \object{Iesus} (im Tatian) auffallend häufig mit \object{dër} determiniert werden. Da eine zusätzliche situative Verortung bzw. ein demonstrativer Verweis in diesen Fällen nicht der Grund für die Determinierung sein kann, liegen hier semantisch-definite (situationsunabhängige) Gebrauchskontexte vor, d.h. Kontexte, die ausschließlich dem Definitartikel vorbehalten sind (s. hierzu ausführlich Kapitel \ref{sec:definitartikel}). Kollokationen dieser Art können damit als frühe Instanzen der Konstruktion [Definitiartikel + N] gewertet werden. \textcite[96]{Bybee2010} zufolge ist die immer noch vorhandene strukturelle Transparenz solcher Token die Voraussetzung, dass Analogieprozesse stattfinden.   
@@ -406,11 +455,18 @@ Wenn eine neue Konstruktion entsteht, sind typischerweise zwei Wandelmechanismen
 Eine Analogie liegt vor, wenn ein sprachlicher Ausdruck nach dem Vorbild eines bestimmten Musters (nach-)gebildet wird. So kann es z.B. innerhalb eines Flexionsparadigmas zu formalen Angleichungen kommen (= analogischer Ausgleich). Ein prominentes Beispiel aus der deutschen Sprachgeschichte ist die frnhd. Numerusprofilierung \parencite[1543]{Wegera2000a}, bei der die kasusmarkierenden \object{n}-Endungen der schwachen Feminina im Akkusativ, Dativ und Genitiv Singular getilgt werden und auf diese Weise Singular und Plural intraparadigmatisch formal ausdifferenziert wird, s. Abbildung \ref{abb:zunge}. Das Vorbild für die Analogie ist der Nominativ Singular \object{zunge}. 
 
 \begin{figure}
-\begin{center}
-  \includegraphics[width=7cm]{images/zunge.jpg}
-\caption {Analogischer Ausgleich bei \object{Zunge}, entnommen aus \textcite[24]{Wegera2012}} 
-\label{abb:zunge}
-\end{center}
+% %   \includegraphics[width=7cm]{images/zunge.jpg}
+  \begin{tabular}{ll>{\itshape}l>{\color{lsGuidelinesGray}\itshape}l>{\itshape}l}
+  & & \tikzmark{Wegeramhd}\normalfont Mhd. & \upshape Frnhd. & \normalfont Nhd.\\\tablevspace
+  Sg. & Nom. & zunge & zunge & Zunge\\
+      & Akk. & zunge-\textbf{n} & zunge-\sout{\textbf{n}} & Zunge\\
+      & Dat. & zunge-\textbf{n} & zunge-\sout{\textbf{n}} & Zunge\\
+      & Gen. & zunge-\textbf{n} & zunge-\sout{\textbf{n}} & Zunge\\
+  \end{tabular}
+  \begin{tikzpicture}[overlay,remember picture]
+  \draw[-{Triangle[]}] (pic cs:Wegeramhd)+(0,-.166) -- ++(3.8cm,-.166);
+  \end{tikzpicture}
+\caption {Analogischer Ausgleich bei \object{Zunge}, entnommen aus \textcite[24]{Wegera2012}\label{abb:zunge}}
 \end{figure} 
 
 \textcite[160]{Lehmann2004} führt ganz ähnliche Fälle des analogischen Ausgleichs an, wenn er über die Rolle der Analogie bei der Grammatikalisierung spricht\footnote{Er illustriert die Analogie mit dem  Wandel von starker zur schwachen Flexion bei den Maskulina: mhd. \object{der hane, des hanen, die hanen} zu frnhd. \object{der Hahn, des Hahns, der Hähne}.}. Seiner Meinung nach kommt die Entwicklung von Definitartikeln ganz ohne Analogie aus, da es kein vergleichbares formales Muster gebe, das die Grammatikalisierung  antreibe; ein analogischer Ausgleich finde also nicht statt. Lehmann sieht die Artikelentwicklung deswegen als Beweis für die Existenz von \blockcquote[161]{Lehmann2004}{pure grammaticalization without analogy}. 
