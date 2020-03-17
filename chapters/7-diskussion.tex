@@ -92,7 +92,7 @@ Die eigentliche Expansionsphase für den onymischen Artikel setzt allerdings ers
 
 \section{Expansionspfade von [\object{dër} + N]} \label{sec:disk-expansion}
 
-Der funktionale Wandel von \object{dër}, der im vorhergehenden Abschnitt aufgezeigt wurde, spiegelt die von \textcite[32--33]{Himmelmann2004} postulierte \object{semantic-pragmatic context expansion}. Neben diesem Expansionspfad beschreibt Himmelmann zwei weitere Richtungen, in die sich das Demonstrativum auf seinem Weg zum Definitartikel ausbreiten kann: Die \object{host-class expansion}, also die Ausbreitung von [\object{dër} + N] auf neue semantische Substantivklassen und die \object{syntactic context expansion}, d.h. die Ausbreitung von zentralen zu weniger zentralen Argumentpositionen \parencite[32--33]{Himmelmann2004}, vgl. Abschnitt \ref{sec:parameter}. Mit den Ergebnissen aus der Korpusuntersuchung können diese groben Stufen der Kontextexpansion weiter ausdifferenziert werden.  
+Der funktionale Wandel von \object{dër}, der im vorhergehenden Abschnitt aufgezeigt wurde, spiegelt die von \textcite[32--33]{Himmelmann2004} postulierte \object{semantic-prag\-mat\-ic context expansion}. Neben diesem Expansionspfad beschreibt Himmelmann zwei weitere Richtungen, in die sich das Demonstrativum auf seinem Weg zum Definitartikel ausbreiten kann: Die \object{host-class expansion}, also die Ausbreitung von [\object{dër} + N] auf neue semantische Substantivklassen und die \object{syntactic context expansion}, d.h. die Ausbreitung von zentralen zu weniger zentralen Argumentpositionen \parencite[32--33]{Himmelmann2004}, vgl. Abschnitt \ref{sec:parameter}. Mit den Ergebnissen aus der Korpusuntersuchung können diese groben Stufen der Kontextexpansion weiter ausdifferenziert werden.  
 
 \subsection{Host-class expansion}
 
@@ -150,12 +150,18 @@ Die Korpusuntersuchung dokumentiert, wie \object{dër} nach und nach an Gebrauch
 Die Proxy-Suche nach NP-Strukturtypen (s. Abschnitt \ref{sec:ergeb-np-struktur}) hat offengelegt, dass der nominale Kopf bereits im frühen Althochdeutschen (im Isidor) in ca. der Hälfte der Belege von einem pränominalen Element begleitet wird. Bei der Mehrzahl handelt es sich um definite Einleiter -- neben dem ursprünglichen Demonstrativum \object{dër}, sind es Possessiva, demonstratives \object{sëlb} oder \object{dëser} sowie Genitivattribute. Man kann schlussfolgern, dass Sprecherinnen und Sprecher auf Basis dieser unterschiedlichen Determinierertypen ein übergeordnetes Schema abstrahieren, bestehend aus einem definiten pänominalen Slot + N \parencite[ähnlich fürs Altenglische][]{Sommerer2011}. 
   
 \begin{figure}
-\begin{center}
-  \includegraphics[width=10cm]{images/schematisierung-det-slot-sw.jpg}
-\caption {Herausbildung eines Determiniererschemas} 
-\label{abb:schematisierung}
-\end{center}
-\end{figure} 
+\begin{forest} for tree = {edge={thick,dashed},grow=west,child anchor=parent}
+% %   \includegraphics[width=10cm]{images/schematisierung-det-slot-sw.jpg}
+[DET + N\\Determiniererschema,align=center,name=det,l sep=1cm,
+  [\textit{dër} + N [Token,tier=token] [Token,tier=token] [Token,tier=token]]
+  [Possessivum + N [Token,tier=token] [Token,tier=token] [Token,tier=token]]
+  [\textit{sëlb} + N [Token,tier=token] [Token,tier=token] [Token,tier=token]]
+  [\textit{dëser} + N [Token,tier=token] [Token,tier=token] [Token,tier=token]]
+  [Genitivattribut + N [Token,tier=token] [Token,tier=token] [Token,tier=token]]
+]
+\end{forest}
+\caption {Herausbildung eines Determiniererschemas\label{abb:schematisierung}}
+\end{figure}
  
 Der gemeinsame Nenner für die Besetzung des Slots ist die definite Bedeutungskompente. Das ursprüngliche Demonstrativum ist ein guter Kandidat, um diesen Slot regelmäßig zu besetzen. Im Vergleich zu \object{dëser} oder \object{sëlb} hat es eine viel generelle Bedeutung und anders als ein Possessivum oder Genitivattribut setzt sein Gebrauch nicht notwendigerweise eine Besitzrelation oder sonstige Zugehörigkeit voraus. Das Funktionsspektrum von \object{dër} hat also die größte Reichweite, was die  Kombinierbarkeit mit unterschiedlichen N-Types begünstigt.
 

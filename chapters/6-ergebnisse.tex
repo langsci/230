@@ -941,29 +941,29 @@ Die bisherigen Ergebnisse deuten darauf hin, dass andere Faktoren den Numerus al
 
 \begin{figure}
 \begin{subfigure}[b]{.5\linewidth}
-  \includegraphics[width=6 cm]{generated/images/numerus-isidor}
+  \includegraphics[height=.25\textheight]{generated/images/numerus-isidor}
 \caption {Isidor}
 \end{subfigure}%
 \begin{subfigure}[b]{.5\linewidth}
-  \includegraphics[width=6 cm]{generated/images/numerus-matt}
+  \includegraphics[height=.25\textheight]{generated/images/numerus-matt}
 \caption {Monseer Matthäus}
 \end{subfigure}
 
 \begin{subfigure}[b]{.5\linewidth}
-  \includegraphics[width=6 cm]{generated/images/numerus-tatian}
+  \includegraphics[height=.25\textheight]{generated/images/numerus-tatian}
 \caption {Tatian}
 \end{subfigure}%
 \begin{subfigure}[b]{.5\linewidth}
-  \includegraphics[width=6 cm]{generated/images/numerus-otfrid}
+  \includegraphics[height=.25\textheight]{generated/images/numerus-otfrid}
 \caption {Otfrid}
 \end{subfigure}
 
 \begin{subfigure}[b]{.5\linewidth}
-  \includegraphics[width=6 cm]{generated/images/numerus-notker}
+  \includegraphics[height=.25\textheight]{generated/images/numerus-notker}
 \caption {Notker}
 \end{subfigure}%
 \begin{subfigure}[b]{.5\linewidth}
-  \includegraphics[width=6 cm]{generated/images/numerus-legende}
+  \includegraphics[height=.25\textheight]{generated/images/numerus-legende}
 \end{subfigure}
 
 \caption{Gebrauch von \object{dër} in Korrelation mit Numerus (relative Häufigkeiten)}
@@ -992,7 +992,10 @@ Die nachfolgende Tabelle nimmt die umgekehrte Perspektive ein: Bei welchen Lemma
 Im Monseer Matthäus sind es gesellschaftlich wichtige Referenten, die mit hoher Tokenfrequenz auftreten und mit \object{dër} determiniert werden (\object{ewawart, herizoho, herizo}), s. Tabelle \ref{tab:lemma.mit.Matt}. Mit \object{managi} ist die Schar gemeint, die den Taten Jesus beiwohnt. Wird mit \object{diota} hingegen auf eine abstraktere und größere Menschenmenge Bezug genommen, so bleiben diese undeterminiert (vgl. Tabelle \ref{tab:lemma.ohne.Matt}), was dafür spricht, dass hier der Faktor Individualität zum Tragen kommt. Ähnlich wie im Isidor sind die übrigen Nomina ohne \object{dër} allerdings ebenfalls textuell  oder kulturell  relevant (etwa \object{sun} oder \object{truhtin}).  Dass sie zur Gruppe der undeterminierten Token gehören, hat wahrscheinlich mit ihrer Monoreferenz zu tun. 
 
 % Matthäus mit
-\inputtable{generated/tables/lemma.top10.mit-Monsee.bearbeitet}{Lemmaliste-Top-5 mit \object{dër} in $\geq$ 80\% der Belege (Monseer Matthäus)}{tab:lemma.mit.Matt}
+  \begin{table}
+      \resizebox{\textwidth}{!}{\input{generated/tables/lemma.top10.mit-Monsee.bearbeitet}}
+      \caption{Lemmaliste-Top-5 mit \object{dër} in $\geq$ 80\% der Belege (Monseer Matthäus)\label{tab:lemma.mit.Matt}}
+  \end{table}
 % Matthäus ohne
 \inputtable{generated/tables/lemma.top10.ohne-Monsee.bearbeitet}{Lemmaliste-Top-5 mit \object{dër} in $<20\%$ der Belege (Monseer Matthäus)}{tab:lemma.ohne.Matt}
 
@@ -1075,7 +1078,7 @@ Weiblich		 & 10,7\%  & 89,3\%     \\ \lspbottomrule
 %\input{generated/tables/pps-otfrid}
 %\input{generated/tables/pps-notker}
 
-Wie in Abschnitt \ref{sec:partizipanten} dargelegt wurde, ist zu erwarten, dass neben einem hohen Belebtheitsgrad auch der Faktor Agentivität die \object{dër}-Setzung begünstigt. Um den Einfluss dieser Variable zu überprüfen, wurden die zufällig ausgewählten 100 NPs, die auch den Analysen der Definitheitskontexte zugrunde liegen (s. Abschnitt \ref{sec:ergeb-defkontexte}), in zwei Gruppen eingeteilt: eindeutige Agens-Belege und Nicht-Agens-Belege. Wie die nachfolgenden Tabellen zeigen, tendiert  die Agens-Gruppe in allen Texten stärker zur \object{dër}-Setzung. Im Isidor ist dieser Unterschied (nach dem Exakten Test nach Fisher) nicht signifikant ($p=0,75$), im Tatian und bei Otfrid hingegen schon ($p=0,02$, $p=0,002$).
+Wie in Abschnitt \ref{sec:partizipanten} dargelegt wurde, ist zu erwarten, dass neben einem hohen Belebtheitsgrad auch der Faktor Agentivität die \object{dër}-Setzung begünstigt. Um den Einfluss dieser Variable zu überprüfen, wurden die zufällig ausgewählten 100 NPs, die auch den Analysen der Definitheitskontexte zugrunde liegen (s. Abschnitt \ref{sec:ergeb-defkontexte}), in zwei Gruppen eingeteilt: eindeutige Agens-Belege und Nicht-Agens-Belege. Wie die nachfolgenden Tabellen zeigen, tendiert  die Agens-Grup\-pe in allen Texten stärker zur \object{dër}-Setzung. Im Isidor ist dieser Unterschied (nach dem Exakten Test nach Fisher) nicht signifikant ($p=0,75$), im Tatian und bei Otfrid hingegen schon ($p=0,02$, $p=0,002$).
 
 \begin{table}
 \centering
@@ -1413,8 +1416,7 @@ Nachfolgend werden die Strukturtypen vergleichend gegenübergestellt mit dem Zie
 Die Gruppe \hervor{Andere} hat sich im Vergleich zu ihrem Pendant in den vorhergehenden Tabellen verkleinert, da die meisten Einzelbelege in Oberklassen überführt wurden,  z.B. [Possessivum + Adjektiv + N] in [Det\textsubscript{flek} (+ Adj.) + N]. Die Gruppe vereint seltene und aus heutiger Sicht untypische Strukturen (etwa [\object{dër} + Genitivattribut + N]) oder Kombinationen aus mehreren Determinierern, z.B. [\object{dër} + Possessivum]. 
 
 \begin{table}
-\centering
-\begin{tabular}{crrrrrrrrrr}
+\resizebox{\textwidth}{!}{\begin{tabular}{crrrrrrrrrr}
 \lsptoprule
 & \multicolumn{10}{c}{Text}\\\cmidrule(lr){2-11}
 & \multicolumn{2}{c}{{I}}      & \multicolumn{2}{c}{{M}} & \multicolumn{2}{c}{{T}}      & \multicolumn{2}{c}{{O}}      & \multicolumn{2}{c}{{N}}     \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
@@ -1426,7 +1428,7 @@ Die Gruppe \hervor{Andere} hat sich im Vergleich zu ihrem Pendant in den vorherg
 5                           & 37,8  & 374 & 49,0 & 391 & 43,6 & 2625 & 44,6 & 4339 & 41,3 & 917 \\
 Andere                                 & 3,5   & 35  & 2,4  & 19  & 1,1  & 69   & 3,8  & 369  & 2,2  & 49  \\\midrule
 Summe                                  &       & 990 &      & 798 &      & 6015 &      & 9721 &      & 2221\\ \lspbottomrule
-\end{tabular}
+\end{tabular}}
 \caption{NP-Strukturtypen im Vergleich (alle Texte)}
 \label{tab:strukturtypen-vergleich}
 \end{table}
