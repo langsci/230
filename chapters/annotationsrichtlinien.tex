@@ -356,7 +356,7 @@ Die NP trägt einen Possessivartikel bei sich und wird damit identifizierbar gem
 
 \subsection{Ambige Fälle}
 
-Zu dieser Kategorie zählen Fälle, die nicht eindeutig in \object{eine} Kategorie eingeordnet werden können. Ambige Fälle gibt es z.B. wenn der Referent sowohl unmittelbar vorerwähnt, als auch über das Weltwissen als identifizierbar gekennzeichnet werden kann (= \object{ambig\_anaphorisch\_abstrakt}). (Diese können dann als mögliche Brückenkontexte gelten.)
+Zu dieser Kategorie zählen Fälle, die nicht eindeutig in \object{eine} Kategorie eingeordnet werden können. Ambige Fälle gibt es z.B. wenn der Referent sowohl unmittelbar vorerwähnt, als auch über das Weltwissen als identifizierbar gekennzeichnet werden kann (=\,\object{ambig\_anaphorisch\_abstrakt}). (Diese können dann als mögliche Brückenkontexte gelten.)
 
 \section{Annotation der Nominalphrase}\label{sec:richtlinien-np}
 
@@ -366,7 +366,7 @@ Nachfolgend wird dokumentiert wie und mit welchen Variablen die Nominalphrase an
 
 Die Variable \object{stichprobe.NA} enthält entweder TRUE (NA in Stichprobe vorhanden) oder FALSE (NA nicht in Stichprobe vorhanden). Sie bildet den Ausgangspunkt für die NP-Annotation.
 
-Die Spalte \object{kopf} erhält die Annotation \hervor{kopf}, wenn das durch \hervor{stichprobe.NA} = \hervor{TRUE} ausgewählte Substantiv Kopf einer unmittelbaren Konstituente im Satz ist (= Satzglied); Ebenso: Substantiv ist Teil einer PP als Satzglied. Falls dies nicht der Fall ist, wird die ID des Kopfes annotiert und der entsprechende Kopf mit \hervor{kopf} gekennzeichnet. Der Kopf bildet den Ausgangspunkt für die weitere Annotation der NP. 
+Die Spalte \object{kopf} erhält die Annotation \hervor{kopf}, wenn das durch \hervor{stichprobe.NA} = \hervor{TRUE} ausgewählte Substantiv Kopf einer unmittelbaren Konstituente im Satz ist (=\,Satzglied); Ebenso: Substantiv ist Teil einer PP als Satzglied. Falls dies nicht der Fall ist, wird die ID des Kopfes annotiert und der entsprechende Kopf mit \hervor{kopf} gekennzeichnet. Der Kopf bildet den Ausgangspunkt für die weitere Annotation der NP. 
 
 
 \subsection{Lateinische Vorlage}
@@ -406,7 +406,7 @@ Der Verweis auf die Bibelstelle wird nur bei Tatian gemacht und dient in erster 
 
 \subsection{Informationen zum Kopf der NP}
 
-Die Spalte \object{phrase} enthält die Information, ob der Kopf nur Teil einer NP (= \hervor{np}) ist oder innerhalb einer NP in eine PP eingebettet ist. Wenn es sich um einen PP handelt, wird zusätzlich die Art der Pröposition angegeben (z.B. \object{pp\_mit}). 
+Die Spalte \object{phrase} enthält die Information, ob der Kopf nur Teil einer NP (=\,\hervor{np}) ist oder innerhalb einer NP in eine PP eingebettet ist. Wenn es sich um einen PP handelt, wird zusätzlich die Art der Pröposition angegeben (z.B. \object{pp\_mit}). 
 
 
 \subsection{Ergänzungen der NP}
@@ -449,8 +449,8 @@ In der Spalte \object{np.definit} werden Informationen zur (In-)Definitheit des 
 
 \section{Syntaktische Funktion und semantische Rolle} \label{sec:richtlinien-semantische-rolle}
 
-Die Spalte \object{synt.fkt} gibt (im Rahmen der Annotation der NP) an, welche syntaktische Funktion die jeweilige NP übernimmt. Unterschieden werden folgende Kategorien: Subjekt (= \object{subjekt}), Objekt (= \object{objekt}), Adverbial (= \object{adverbial})%\footnote{Es wird nicht zwischen fakultativen und obligatorischen Adverbialen unterschieden.}
-, Attribut (= \object{attribut}), Prädikativ (= \object{praedikativ}), nominaler Teil des Prädikates bei Funktionsvergefügen (= \object{nom.teil.praedikat}), direkte Anrede (= \object{anrede}. Appositionen werden nach folgendem Muster gekennzeichnet: \object{subjekt.apposition} oder \object{object.apposition} etc. 
+Die Spalte \object{synt.fkt} gibt (im Rahmen der Annotation der NP) an, welche syntaktische Funktion die jeweilige NP übernimmt. Unterschieden werden folgende Kategorien: Subjekt (=\,\object{subjekt}), Objekt (=\,\object{objekt}), Adverbial (=\,\object{adverbial})%\footnote{Es wird nicht zwischen fakultativen und obligatorischen Adverbialen unterschieden.}
+, Attribut (=\,\object{attribut}), Prädikativ (=\,\object{praedikativ}), nominaler Teil des Prädikates bei Funktionsvergefügen (=\,\object{nom.teil.praedikat}), direkte Anrede (=\,\object{anrede}. Appositionen werden nach folgendem Muster gekennzeichnet: \object{subjekt.apposition} oder \object{object.apposition} etc. 
 
 In der Spalte \object{sem.rolle} wird zwischen \object{agens} und \object{nicht-agens} differenziert. Die Agensrolle wird nur bei Subjekten vergeben, die willentlich handeln oder ein Handlung verursachen, eine selbstinduzierte Bewegung ausführen oder Träger eines Gefühlszustands sind \parencite[gemäß den Proto-Agensdimensionen in][]{Dowty1991,Primus2012}. Ist die Zuordnung unklar, wird immer \object{nicht-agens} annotiert. 
  

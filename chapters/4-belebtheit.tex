@@ -10,11 +10,18 @@ Im Nhd. stehen belebte Referenten häufiger an der Spitze des Mittelfeldes als u
 Die Belebtheitsgrade sind nicht mit einer biologischen Unterscheidung in \object{belebt} und \object{unbelebt} gleichzusetzen, sondern entspringen einer anthropozentrischen Weltsicht \parencite[s.][]{Fraurud1996,Yamamoto1999,Enger2011}. Der Mensch nimmt sich selbst als Bezugspunkt, um seine Umgebung kognitiv zu organisieren und rangiert damit entsprechend weit oben in der Hierarchie. Weitere Abstufungen innerhalb der Tierwelt verdeutlicht das anthropozentrische Kontinuum von \textcite[114f.]{Kopcke2000}, s. Abbildung \ref{anthro}. 
 
 \begin{figure}
-\begin{center}
-\includegraphics[width=10cm]{images/koepcke-anthro.jpg}
+% \includegraphics[width=10cm]{images/koepcke-anthro.jpg}
+\begin{tikzpicture}
+\matrix (anthro) [matrix of nodes]
+  {
+  Menschen & Säugetiere & Vögel & Fische & Reptilien & Unbelebtes\\
+  };
+\node [above of=anthro-1-1] {maximal menschenähnlich};
+\node [above of=anthro-1-6] {minimal\slash nicht menschenähnlich};
+\draw[thick,-{Triangle[]}] (anthro.north west) -- (anthro.north east);
+\end{tikzpicture}
 \caption {Antrophozentrisches Kontinuum \parencite[115]{Kopcke2000}}
 \label{anthro}
-\end{center}
 \end{figure} 
 
  
@@ -102,7 +109,7 @@ Die Entwicklung der satzinternen Großschreibung \parencite{Bergmann1998,Bergman
 
 Die Forschung zum Definitartikel spricht dafür, dass die Ausbreitung des Artikels in ähnlicher Weise vonstatten ging. So dokumentiert \textcite[73ff.]{Oubouzar1992} aufbauend auf einer früheren Korpusuntersuchung \parencite{Oubouzar1989}, dass das  Artikelwort \object{dër} am Anfang (im ahd. Isidor) ebenfalls primär bei belebten (und diskursrelevanten) Referenten erscheint \parencite[vgl. insbesondere][566--567]{Oubouzar1989} und erst zum Ende des Ahd. auch vermehrt Abstrakta erfasst \parencite[][572]{Oubouzar1989}; neben Unika und generischen NPs, die in Abschnitt \ref{sec:definitartikel} bereits diskutiert wurden. \textcite[74ff.]{Szczepaniak2011} nimmt basierend auf diesen Beobachtungen und durch die Analyse von Stichproben aus der ahd. Sprachperiode eine belebtheitsgesteuerte Ausbreitung des Artikels an und zwar entlang der Kategorien \textsc{belebt > unbelebt > abstrakt}. Was allerdings bislang noch fehlt, ist eine Korpusuntersuchung, welche die Korrelation von Belebtheit und \object{dër}-Setzung systematisch offenlegt. 
 
-In der Sprachtypologie wird zwar auf das Zusammenspiel von hohem Belebtheitsgrad und Definitheit verwiesen \parencites()()[s. z.B.][53]{Dahl1996}[][166f.]{Croft2006}.\footnote{Definitheit kann in Kombination mit Belebtheit beispielsweise für \object{differential object marking} (= DOM) sorgen \parencite{Aissen2003}. \textcite{Lyons1999} liefert hierfür eine Erklärung \parencite[ähnlich argumentiert auch][119]{Croft1995}: \blockcquote[2014]{Lyons1999}{The operation for the hierarchy in some processes (most notably object marking and verb-object agreement) has been accounted for functionally, in terms of a natural tendency for the subject or agent to be more animate and more definite than the object or patient. Deviation from this natural pattern are then marked morphologically}.}
+In der Sprachtypologie wird zwar auf das Zusammenspiel von hohem Belebtheitsgrad und Definitheit verwiesen \parencites()()[s. z.B.][53]{Dahl1996}[][166f.]{Croft2006}.\footnote{Definitheit kann in Kombination mit Belebtheit beispielsweise für \object{differential object marking} (=\,DOM) sorgen \parencite{Aissen2003}. \textcite{Lyons1999} liefert hierfür eine Erklärung \parencite[ähnlich argumentiert auch][119]{Croft1995}: \blockcquote[2014]{Lyons1999}{The operation for the hierarchy in some processes (most notably object marking and verb-object agreement) has been accounted for functionally, in terms of a natural tendency for the subject or agent to be more animate and more definite than the object or patient. Deviation from this natural pattern are then marked morphologically}.}
 Dies wird schon deutlich,  wenn man die ersten drei Kategorien der \object{Extended Animacy Hierarchy} in \REF{ex:dixon} betrachtet: Pronomen in der 1. Person sind naturgemäß definit, ebenso Eigennamen. Beide Formen referieren typischerweise auf Menschen. Dass die Ausprägung der Definitheitskategorie selbst, d.h. die  Markierung durch einen Artikel, ein Reflex belebtheitsbedingter Konzeptualisierung sein könnte, wird jedoch kaum diskutiert. Eine Ausnahme ist die Arbeit von \textcite{Enger2011}, in der die Frage aufgeworfen wird, von welcher Belebtheitsklasse aus die Kategorie Definitheit (in Form eines sich entwickelnden Artikelwortes\footnote{Zu weiteren Möglichkeiten, Definitheit auszudrücken vgl. Abschnitt \ref{sec:def-ahd}.}) ihren Anfang nimmt und über welche Kategorien die Expansion erfolgt. Zur Beantwortung formulieren \textcite[206]{Enger2011} ein sog. \hervor{Relevance Constraint}, das nicht nur für die Definitheit, sondern auch für die Nominalkategorien Kasus, Numerus und Genus gelten soll, s. \REF{ex:enger}. 
    
 \begin{exe}
@@ -265,7 +272,7 @@ In einem von \textcite[163--166]{Schrauf2011} durchgeführten Ratingexperiment, 
 \end{center}
 \end{figure}
 
-Für den emergierenden Artikel ist die Ausweitung von prototypischen Konkreta in Richtung prototypische Abstrakta -- und damit von [+individualisiert] zu [-individualisiert] -- zu erwarten. Eine schrittweise Kombination mit Vertretern der Peripherie kann den Weg für eine graduelle Expansion ebnen. Wegen der Vielschichtigkeit der kognitiven Faktoren, die den Abstraktheitsgrad determinieren, wird an dieser Stelle darauf verzichtet, eine hierarchische Skala innerhalb der \hervor{untypischen} Abstrakta zu modellieren, die eine mögliche Expansionslinie repräsentiert. Alternativ kann man von drei Gruppen ausgehen: den Prototypen (Konkreta und Abstrakta) und einem Übergangsbereich. Wie im nächsten Abschnitt gezeigt wird, ist die potentielle \object{Zählbarkeit} von Abstrakta und Konkreta ein wichtiger Einflussfaktor für Individualität und damit eine zusätzliche Variable, die den Expansionsverlauf des Artikels innerhalb der peripheren Bereiche beeinflusst.  
+Für den emergierenden Artikel ist die Ausweitung von prototypischen Konkreta in Richtung prototypische Abstrakta -- und damit von [+individualisiert] zu [\textminus{}individualisiert] -- zu erwarten. Eine schrittweise Kombination mit Vertretern der Peripherie kann den Weg für eine graduelle Expansion ebnen. Wegen der Vielschichtigkeit der kognitiven Faktoren, die den Abstraktheitsgrad determinieren, wird an dieser Stelle darauf verzichtet, eine hierarchische Skala innerhalb der \hervor{untypischen} Abstrakta zu modellieren, die eine mögliche Expansionslinie repräsentiert. Alternativ kann man von drei Gruppen ausgehen: den Prototypen (Konkreta und Abstrakta) und einem Übergangsbereich. Wie im nächsten Abschnitt gezeigt wird, ist die potentielle \object{Zählbarkeit} von Abstrakta und Konkreta ein wichtiger Einflussfaktor für Individualität und damit eine zusätzliche Variable, die den Expansionsverlauf des Artikels innerhalb der peripheren Bereiche beeinflusst.  
 
 \subsection{Zählbare Nomen vs. Massennomen}\label{section:mass}
 
@@ -312,24 +319,36 @@ Substanz (=\,Massennomen) &   Gold       & \textminus                           
 Wegen ihrer Begrenztheit ist der Individualitätsgrad sowohl bei den Massennomen als auch bei Substantiven im Plural geringer als bei zählbaren Substantiven im Singular. Für Abstrakta wie \object{Idee} kann die Zählbarkeit eine semantische Komponente sein, die einer Determination mit einem emergierenden Artikel förderlich ist, so dass der Expansionspfad innerhalb der Abstrakta vermutlich von \object{zählbar} zu \object{nicht zählbar} (z.B. \object{Finsternis}) verläuft. Kollektiva wie \object{Mannschaft} haben Referenten mit klaren Rändern, allerdings gibt es auch Kollektiva, deren Konturen weniger scharf sind und deren interne Beschaffenheit nicht als Agglomerat von gleichen Individuen konzeptualisiert wird, sondern als Anhäufung einer homogenen Masse, was sie in die Nähe von Massennomen bringt, etwa \object{Laub} oder \object{Vieh} \parencite[s.][120f.]{Zifonun2012}. 
 Faktoren wie Größe, Auffälligkeit und Belebtheit hängen sicherlich mit der Einteilung zusammen: Es ist wahrscheinlich, dass \object{Menschen} oder gut sichtbare Objekte wie \object{Berge} als singuläres, begrenztes Kollektiv konzeptualisiert werden (\object{Mannschaft, Gebirge}). Dies unterstützt individualisierte Lesarten. Der kollektive Zusammenschluss der Komponenten von \object{Laub} oder \object{Vieh} lädt hingegen zum nicht-referentiellen und damit nicht-individualisierten Gebrauch ein (\object{Ich muss noch Laub fegen, Der Bauer hat viel Vieh}). Ein Definitartikel kann diese Lesarten zurücknehmen und auch Referenten von Massennomen (\object{das Laub, das Vieh, das Gold}) identifizierbar \hervor{machen}.\footnote{Der umgekehrte Fall ist ebenfalls möglich, nämlich dann, wenn der Kontext ein Massennomen verlangt, aber ein singuläres Nomen verwendet wird, vgl. das makabere Beispiel aus \textcite[81]{Corbett2000}: \object{There was dog all over the road}.} 
 
-Die Substantivklassifikation aus \textcite[104]{Zifonun2012}, die im Rahmen einer Analyse zu Kompositionszweitgliedern als Ausdruck von \object{Nominalaspekt}\footnote{Z.B.\object{-werk} als Marker für Kollektiva, s. \textcite[101]{Zifonun2012}.} modelliert wurde, eignet sich, um  Interaktionen zwischen den genannten Individualitätskriterien zu verdeutlichen. \textcite[103]{Zifonun2012} nimmt zwei Seinsarten für das Deutsche an, die Individuativa (= zählbare Nomen) und die Kontinuativa (= Massennomen), s. \REF{ex:seinsarten} \parencite[basierend auf][]{Rijkhoff1991,Rijkhoff2002}. Orthogonal zu dieser Einteilung verläuft die Opposition konkret-abstrakt sowie die Gruppe der Kollektiva, s. Abbildung \ref{abb:zifonun-seinsarten}.
+Die Substantivklassifikation aus \textcite[104]{Zifonun2012}, die im Rahmen einer Analyse zu Kompositionszweitgliedern als Ausdruck von \object{Nominalaspekt}\footnote{Z.B.\object{-werk} als Marker für Kollektiva, s. \textcite[101]{Zifonun2012}.} modelliert wurde, eignet sich, um  Interaktionen zwischen den genannten Individualitätskriterien zu verdeutlichen. \textcite[103]{Zifonun2012} nimmt zwei Seinsarten für das Deutsche an, die Individuativa (=\,zählbare Nomen) und die Kontinuativa (=\,Massennomen), s. \REF{ex:seinsarten} \parencite[basierend auf][]{Rijkhoff1991,Rijkhoff2002}. Orthogonal zu dieser Einteilung verläuft die Opposition konkret-abstrakt sowie die Gruppe der Kollektiva, s. Abbildung \ref{abb:zifonun-seinsarten}.
 
 \begin{exe}
 	\ex \label{ex:seinsarten}
 	\begin{xlist}
-		\ex \label{ex:indi} Individuativum (+Shape, -Homogeneity)
-		\ex \label{ex:konti} Kontinuativum (-Shape, +Homogeneity)
+		\ex \label{ex:indi} Individuativum (+Shape, \textminus{}Homogeneity)
+		\ex \label{ex:konti} Kontinuativum (\textminus{}Shape, +Homogeneity)
  	\end{xlist}
 \end{exe}
 
 \begin{figure}
-\begin{center}
-\includegraphics[width=12cm]{images/zifonun-seinarten-neu.jpg}
+% % \includegraphics[width=12cm]{images/zifonun-seinarten-neu.jpg}
+\begin{forest}
+  [Appellativa
+    [Individuativa
+      [Konkret-\\Ind.,align=center   [\textit{Tisch}\\\textit{Mann},align=center] ]
+      [Abstrakt-\\Ind.,align=center,before computing xy={s/.average={s}{siblings}}  [\textit{Zahl}\\\textit{Gedanke},align=center]]
+      [Kollektiv-\\Ind.,align=center [\textit{Gruppe}\\\textit{Herde},align=center] ]
+    ]
+    [Kontinuativa
+      [Konkret-\\Kont.,align=center [\textit{Milch}\\\textit{Gold},align=center] ]
+      [Abstrakt-\\Kont.,align=center,before computing xy={s/.average={s}{siblings}} [\textit{Glück}\\\textit{Trauer},align=center] ]
+      [Kollektiv-\\Kont.,align=center [\textit{Obst}\\\textit{Vieh},align=center] ]
+    ]
+  ]
+\end{forest}
 \caption {Seinsarten im Deutschen aus \textcite[104]{Zifonun2012}\label{abb:zifonun-seinsarten}}
-\end{center}
 \end{figure}
 
-Die Eigenschaft [+ Shape] sorgt für einen erhöhten Individualitätsgrad bei den Gruppenmitgliedern der Individuativa. Wenn man ein Individualitätsgefälle von Konkreta zu Abstrakta annimmt, dann ist dieses Gefälle Gruppen übergreifend stärker als intern, d.h. \object{Tisch} und \object{Zahl} sind wegen des geteilten Merkmals [+ Shape] konzeptionell ähnlicher als \object{Tisch} im Vergleich zu  \object{Glück}. Es muss angemerkt werden, dass nach \textcite{Rijkhoff2002} ein Nomen wie \object{Gruppe} oder \object{Herde} auf der Anhäufung von Mitgliedern des gleichen Typs beruht, hier z.B. \object {Menschen} oder \object{Tiere}. Die interne Struktur solcher Nomen unterscheidet sich also gegenüber \object{einfachen} Konkreta wie \object{Tisch}. Man müsste also eigentlich das Merkmal [+ Homogeneity] vergeben.\footnote{Vgl. auch die Diskussion oben zum konzeptionell ähnlichem \object{Mannschaft}.} Als Grund, die beiden Substantivtypen dennoch zu gruppieren, nennt \textcite[103]{Zifonun2012}  das gemeinsame grammatische Verhalten: die Fähigkeit zur Pluralbildung und die Kombinierbarkeit mit Kardinalzahlen. Sprachspezifische Kriterien wie diese können nicht ohne Weiteres auf andere Sprachsysteme übertragen werden. Schließlich gibt es Evidenzen, dass Sprachsysteme die Grenze zwischen zählbaren und nicht-zählbaren Referenten an unterschiedlichen Stellen ansetzen: So kennt bspw. das Russische im Gegensatz zum Englischen für \object{Kartoffel} keinen Plural, wohl aber für \object{Frucht} \parencite[80]{Corbett2000}. Es stellt sich dann die Frage \blockcquote[80]{Corbett2000}{how large the component parts of a substance have to be before they are treated as individuals (for speakers of English a pea is large enough, but not for a speaker of Russian}. Interessanterweise betrifft diese Forschungsdiskussion jedoch ausschließlich unbelebte Referenten. Die Einteilung von Individuativnomen mit dem Merkmal [+belebt] kann deswegen auch sprachübergreifend als eigene höchst individualisierte Klasse gerechtfertigt werden. Schlägt sich die konzeptuelle Zuordnung eines Objekts in die Kategorie \object{zählbar} auch in der Grammatik nieder, so ist dies ein zusätzlicher Hinweis auf eine erhöhte Individualität und ein Faktor, der die Determination mit Artikelwort begünstigt. 
+Die Eigenschaft [+Shape] sorgt für einen erhöhten Individualitätsgrad bei den Gruppenmitgliedern der Individuativa. Wenn man ein Individualitätsgefälle von Konkreta zu Abstrakta annimmt, dann ist dieses Gefälle Gruppen übergreifend stärker als intern, d.h. \object{Tisch} und \object{Zahl} sind wegen des geteilten Merkmals [+Shape] konzeptionell ähnlicher als \object{Tisch} im Vergleich zu  \object{Glück}. Es muss angemerkt werden, dass nach \textcite{Rijkhoff2002} ein Nomen wie \object{Gruppe} oder \object{Herde} auf der Anhäufung von Mitgliedern des gleichen Typs beruht, hier z.B. \object {Menschen} oder \object{Tiere}. Die interne Struktur solcher Nomen unterscheidet sich also gegenüber \object{einfachen} Konkreta wie \object{Tisch}. Man müsste also eigentlich das Merkmal [+Homogeneity] vergeben.\footnote{Vgl. auch die Diskussion oben zum konzeptionell ähnlichem \object{Mannschaft}.} Als Grund, die beiden Substantivtypen dennoch zu gruppieren, nennt \textcite[103]{Zifonun2012}  das gemeinsame grammatische Verhalten: die Fähigkeit zur Pluralbildung und die Kombinierbarkeit mit Kardinalzahlen. Sprachspezifische Kriterien wie diese können nicht ohne Weiteres auf andere Sprachsysteme übertragen werden. Schließlich gibt es Evidenzen, dass Sprachsysteme die Grenze zwischen zählbaren und nicht-zählbaren Referenten an unterschiedlichen Stellen ansetzen: So kennt bspw. das Russische im Gegensatz zum Englischen für \object{Kartoffel} keinen Plural, wohl aber für \object{Frucht} \parencite[80]{Corbett2000}. Es stellt sich dann die Frage \blockcquote[80]{Corbett2000}{how large the component parts of a substance have to be before they are treated as individuals (for speakers of English a pea is large enough, but not for a speaker of Russian}. Interessanterweise betrifft diese Forschungsdiskussion jedoch ausschließlich unbelebte Referenten. Die Einteilung von Individuativnomen mit dem Merkmal [+belebt] kann deswegen auch sprachübergreifend als eigene höchst individualisierte Klasse gerechtfertigt werden. Schlägt sich die konzeptuelle Zuordnung eines Objekts in die Kategorie \object{zählbar} auch in der Grammatik nieder, so ist dies ein zusätzlicher Hinweis auf eine erhöhte Individualität und ein Faktor, der die Determination mit Artikelwort begünstigt. 
 
 \section{Belebtheit in Interaktion mit anderen Faktoren} \label{sec:andere-kog}
  
@@ -364,8 +383,8 @@ Wie \textcite[][151f.]{Yamamoto1999} hervorhebt, entspringen Belebtheit und sema
 \begin{exe}
 	\ex \label{ex:rollen}
 	\begin{xlist}
-	 	\ex \object{Moritz} (= Agens) \object{gibt Paul ein Buch.}
-		\ex \object{Paul kitzelt Moritz} (= Patiens).
+	 	\ex \object{Moritz} (=\,Agens) \object{gibt Paul ein Buch.}
+		\ex \object{Paul kitzelt Moritz} (=\,Patiens).
  
 	\end{xlist}
 \end{exe}
