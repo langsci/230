@@ -130,7 +130,7 @@
 
 \newif\iflsDraft \lsDraftfalse
 \newif\iflsOpenReview \lsOpenReviewfalse
-\newif\iflsResetcapitals \lsResetcapitalsfalse
+\newif\iflsResetCapitals \lsResetCapitalsfalse
 \newif\iflsShowIndex \lsShowIndexfalse
 \newif\iflsBiblatex \lsBiblatextrue
 \newif\iflsCollection \lsCollectionfalse
@@ -174,7 +174,7 @@
 \DeclareVoidOption{smallfont}{
 	\renewcommand{\lsFontsize}{10pt}}
 \DeclareVoidOption{decapbib}{
-	\lsResetcapitalstrue }
+	\lsResetCapitalstrue }
 \DeclareVoidOption{draftmode}{	% 'draftmode' instead of 'draft' due to undesirable side efects
 	 \lsDrafttrue
 	 \overfullrule=5pt	}	% to indicate overfull hboxes
@@ -488,7 +488,7 @@
     \null\newpage\thispagestyle{empty}
   }
 \fi
-\fi
+
 
 \ifx\lsOutput\lsOutputGuidelines        % only if output==guidelines
   {\setcounter{page}{-1}
@@ -570,7 +570,7 @@
 
 } %% \maketitle
 \fi
-
+\fi
 %% for those who like the example in numbered example sentences to be typeset in italics
 %% this is possible for a complete series only.
 \ifx\lsSeries\sidl
@@ -795,7 +795,7 @@
 \fi % end minimal mode
 
 \setkomafont{sectioning}{\normalcolor\bfseries}
-
+\setkomafont{descriptionlabel}{\normalfont\itshape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Colors
@@ -1335,7 +1335,7 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 	url=false,
 	eprint=false,
 	autolang=hyphen,
-	\iflsResetcapitals
+	\iflsResetCapitals
         language=english,
     \fi
 	backend=\lsBiblatexBackend,
