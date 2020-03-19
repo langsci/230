@@ -242,7 +242,27 @@ Versucht man die Dichotomie \object{konkret-abstrakt} auf den Substantivwortscha
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=12cm]{images/schrauff-ewald-neu.jpg}
+% % \includegraphics[width=12cm]{images/schrauff-ewald-neu.jpg}
+\begin{tikzpicture}
+\fill[fill=YlOrRd5] (0,0) circle (7.5em) node (outercircle) {};
+\fill[fill=YlOrRd4] (0,0) circle (6em);
+\fill[fill=YlOrRd3] (0,0) circle (4.5em);
+\fill[fill=YlOrRd2] (0,0) circle (3em);
+\fill[fill=YlOrRd1] (0,0) circle (1.5em) node (abstrakt) [font=\footnotesize] {abstrakt};
+\node [below left=3cm of outercircle.south west,font=\footnotesize] (konkret) {konkret};
+\draw[-{Triangle[]}] (konkret) -- (abstrakt.south);
+\node [above right=2cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {zentrum\\konkreta};
+\node [above right=.25cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {peripherie\\konkreta};
+\node [below right=.25cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {peripherie\\abstrakta};
+\node [below right=2cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {zentrum\\abstrakta};
+\end{tikzpicture}\vskip2\baselineskip
+{\footnotesize\begin{tabularx}{\textwidth}{@{}lQlQ@{}}
+\cellcolor{YlOrRd5} & Bezeichnungen für sinnlich komplexe wahrnehmbare Erscheinungen. Gegenstände und Lebewesen und deren Hyperonyme. Beispiele: \textit{Hund}, \textit{Tier}, \textit{Lebewesen}, \textit{Lampe}, \textit{Brot}.
+& \cellcolor{YlOrRd2} & Bezeichnungen für sinnlich nicht direkt wahrnehmbare Eigenschaften und Vorgänge\slash Tätigkeiten oder nur durch Abstraktion "`geschaffene"' Einheiten mit sinnlich wahrnehmbaren Merkmalen. Beispiele: \textit{Sommer}, \textit{Krieg}, \textit{Fest}, \textit{Rheuma}.\\
+\cellcolor{YlOrRd4} & Bezeichnungen für Erscheinungen, deren Wahrnehmung sich auf einen Sinn beschränkt. Beispiele: \textit{Nebel}, \textit{Luft}, \textit{Dunst}.
+& \cellcolor{YlOrRd1} & Bezeichnungen für sinnlich nicht wahrnehmbare, nur durch Abstraktion "`geschaffene"' Einheiten. Beispiele: \textit{Geist}, \textit{Seele}, \textit{Vergänglichkeit}.\\
+\cellcolor{YlOrRd3} & Bezeichnungen für sinnlich wahrnehmbare Eigenschaften und Vorgänge\slash Tätigkeiten. Beispiele: \textit{Kühle}, \textit{Laufen}, \textit{Singen}, \textit{Fahrt}.
+\end{tabularx}}
 \caption {Zentrum und Peripherie bei Konkreta und Abstrakta \parencite[][41]{Schrauf2011}}
 \label{abb:schrauf-ewald}
 \end{center}
