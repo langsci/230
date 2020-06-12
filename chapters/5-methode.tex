@@ -237,10 +237,29 @@ Bislang sind in der Sprachwissenschaft kaum Studien zu finden, in denen authenti
 
 Pionierarbeit zur Belebtheitsannotation wurde im Bereich der historischen Linguistik im Rahmen des DFG-Projekts \hervor{Entwicklung der satzinternen Großschreibung im Deutschen (SiGS)} \parencite[vgl.][]{Szczepaniak2016} geleistet. Auf Basis der im Projekt ausgearbeiteten Richtlinien\footnote{Für die Bereitstellung danke ich Renata Szczepaniak und allen Mitarbeiterinnen und Mitarbeitern im SiGS-Projekt.} wurde eine eigene Anleitung zur Belebtheitsannotation für die vorliegende Untersuchung entwickelt. Darüber hinaus flossen die in Abschnitt \ref{sec:konabst} angesprochenen theoretischen Erkenntnisse zur Semantik von Substantiven im Deutschen \parencite[u.a.][]{Ewald1992,Studler2011} in die Annotationsrichtlinien ein sowie  Vorarbeiten aus der Computerlinguistik mit ein \parencite[vgl.][]{Garretson2004,Zaenen2004,Ovrelid2009}. HIer sind Belebtheitsannotationen bereits seit einigen Jahren Gegenstand des wissenschaftlichen Diskurses. Abbildung~\ref{abb:belebtheitsannotationsschema} gibt einen Überblick über die Kategorien, die bei der Annotation unterschieden wurden.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/annotationsschema.pdf}
+\begin{sidewaysfigure}
+\small
+% % \includegraphics[width=\textwidth]{images/annotationsschema.pdf}
+\begin{forest}
+forked edges,for tree={fit=tight}
+[Belebtheitskategorien,font=\bfseries
+    [Oberkategorie,font=\bfseries,for descendants={font=\bfseries} 
+                               [Unterkategorie [Beispiel [\itshape Annotation]]]]
+    [Übermenschliche Entitäten [Positiv [\textit{Gott} [\textit{ueber\_pos}]]]
+                               [Negativ [\textit{Teufel} [\textit{ueber\_neg}]]]
+    ]
+    [Konkreta belebt [Mensch [\textit{Gesandter} [\textit{kon\_mensch}]]]
+                     [Tier [\textit{Schaf} [\textit{kon\_tier}]]]
+    ]
+    [Konkreta unbelebt [Konkretum [\textit{Stein} [\textit{kon}]]]
+                       [Körperteil [\textit{Arm} [\textit{kon\_koerper}]]]
+                       [Ort [\textit{Straße} [\textit{kon\_ort}]]]
+    ]
+    [Abstrakta [Abstraktum [\textit{Hoffnung} [\textit{abst}]]]]
+]
+\end{forest}
 \caption {Belebtheitsannotationsschema\label{abb:belebtheitsannotationsschema}}
-\end{figure} 
+\end{sidewaysfigure} 
 
 Vertikal abgebildet sind Ober- und Unterkategorien sowie je ein Beispiel und der zugehörige \object{Tag}. Horizontal finden sich die Belebtheitskategorien und zwar absteigend von links [+belebt] nach rechts [\textminus{}belebt],  wobei teilweise weitere kognitive Faktoren die Unterteilung überlagern: So bildet die Hierarchie auch Aspekte der kulturellen Relevanz ab, da ganz links die sog. \object{übermenschlichen} Referenten stehen. Bezeichnungen für Orte sind prädestiniert dafür, eine niedrige Individualität bzw. Spezifizität aufzuweisen, da sie oft als Adverbial fungieren.\footnote{Bei den Konkreta wurden darüber hinaus Körperteile gesondert annotiert. Diese Gruppe ist allerdings weniger für die Belebtheit relevant, sondern in Bezug auf die Frage, inwiefern der emergierende Artikel bereits in nicht-demonstrativen Definitheitskontexten gebraucht wird (vgl. Abschnitt \ref{sec:pragsem}).} Viele Referenten sind -- wie die Ausführungen in Abschnitt \ref{sec:konabst} gezeigt haben~-- zwischen dem Pol [abstrakt] und [konkret] anzusiedeln. Um dieser Gruppe gerecht zu werden, wurde eine Zwischenkategorie angesetzt. Der Belebtheitsleitfaden enthält eine detaillierte Anleitung mit Beispielen, mit dem Ziel, eine möglichst objektive Zuordnung zu gewährleisten.
 
