@@ -238,7 +238,7 @@ Bislang sind in der Sprachwissenschaft kaum Studien zu finden, in denen authenti
 Pionierarbeit zur Belebtheitsannotation wurde im Bereich der historischen Linguistik im Rahmen des DFG-Projekts \hervor{Entwicklung der satzinternen Großschreibung im Deutschen (SiGS)} \parencite[vgl.][]{Szczepaniak2016} geleistet. Auf Basis der im Projekt ausgearbeiteten Richtlinien\footnote{Für die Bereitstellung danke ich Renata Szczepaniak und allen Mitarbeiterinnen und Mitarbeitern im SiGS-Projekt.} wurde eine eigene Anleitung zur Belebtheitsannotation für die vorliegende Untersuchung entwickelt. Darüber hinaus flossen die in Abschnitt \ref{sec:konabst} angesprochenen theoretischen Erkenntnisse zur Semantik von Substantiven im Deutschen \parencite[u.a.][]{Ewald1992,Studler2011} in die Annotationsrichtlinien ein sowie  Vorarbeiten aus der Computerlinguistik mit ein \parencite[vgl.][]{Garretson2004,Zaenen2004,Ovrelid2009}. HIer sind Belebtheitsannotationen bereits seit einigen Jahren Gegenstand des wissenschaftlichen Diskurses. Abbildung~\ref{abb:belebtheitsannotationsschema} gibt einen Überblick über die Kategorien, die bei der Annotation unterschieden wurden.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{images/annotationsschema-belebtheit-sw.jpg}
+\includegraphics[width=\textwidth]{images/annotationsschema.pdf}
 \caption {Belebtheitsannotationsschema\label{abb:belebtheitsannotationsschema}}
 \end{figure} 
 
@@ -297,15 +297,30 @@ A1 und A3               & 0,721  \\
 A2 und A3               & 0,759  \\
 A1, A2 und A3           & 0,722  \\ \lspbottomrule
 \end{tabular}
-\caption{\herkur{Inter Annotator Agreement} der Belebtheitsannotation \\ (Pilotannotation mit drei Annotatorinnen)}
+\caption{\herkur{Inter Annotator Agreement} der Belebtheitsannotation (Pilotannotation mit drei Annotatorinnen)}
 \end{table}
 
 \begin{figure}
-\begin{center}
-\includegraphics[width=10cm]{images/kappa-artstein.jpg}
-\caption {Kappa-Werte und Stärke der Übereinstimmung \\ \parencite[576]{Artstein2008}}
-\label{abb:kappa-skala}
-\end{center}
+\begin{tikzpicture}[
+        /pgf/number format/.cd,
+		fixed,
+		precision=1, 
+		fixed zerofill,
+		every node/.style={font=\strut}
+    ]
+	\node at (-2,0) {$\kappa=$};
+	\draw (-2,-\baselineskip) -- (10,-\baselineskip);
+	\foreach \i in {0,2,4,6,8,10}
+		{
+		   \node at (\i,0) {\pgfmathparse{\i/10}\pgfmathprintnumber{\pgfmathresult}};
+		   \draw  (\i,-.25) -- ++(0,-\baselineskip);
+		};
+	\foreach \x/\y in {-1/Poor, 1/Slight, 3/Fair, 5/Moderate, 7/Substantial, 9/Perfect}
+		{
+		  \node at (\x,-.75) {\y};
+		};
+	\end{tikzpicture}
+\caption {Kappa-Werte und Stärke der Übereinstimmung \parencite[576]{Artstein2008}\label{abb:kappa-skala}}
 \end{figure} 
 
 In diesem ersten Durchgang wurde mit einem Kappa-Wert von 0,722 (\herkur{substantial}) bereits eine relativ hohe Übereinstimmung zwischen den drei Annotationen erzielt, vgl. Abbildung~\ref{abb:kappa-skala}. 
