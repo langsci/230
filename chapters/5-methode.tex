@@ -247,17 +247,41 @@ Vertikal abgebildet sind Ober- und Unterkategorien sowie je ein Beispiel und der
 Vor der Annotation musste die Frage geklärt werden, ob lexem- oder token"-basiert annotiert wird. Für eine tokenbasierte Annotation spricht, dass so auch Referenzverschiebungen durch Metaphern und Metonymien sowie kontextspezifische Interpretationen einbezogen werden können (\object{die Seiten im Buch} vs. \object{beide Seiten haben recht}). \textcite{Ovrelid2009} zeigt in einem Vergleich von Lexem- und Token\-annotation in schwedischen Wissenschaftstexten, dass solche Referenzverschiebungen mit 1,1\%  allerdings vergleichsweise selten sind.  Bei biblischen Texten, die naturgemäß einen höheren Anteil an Gleichnissen und metaphorischen Bezügen aufweisen, etwa falsche Propheten als \object{Wölfe} oder das Volk als \object{Schafsherde}, sieht die Verteilung jedoch vermutlich anders aus. 
 
 Eine Art Kompromiss zwischen Lexem- und Tokenannotation ergibt sich,\linebreak wenn man die Übersetzungen, die im Altdeutsch-Projekt angefertigt wurden, als Annotationsgrundlage nimmt.  
-Über den Internetauftritt des Projekts erfährt man: \hervor{Die Ebene \object{translation} enthält eine zum inhaltlichen Kontext des Lemmas passende Auswahl aus den bei \textcite{Splett1993} gegebenen Übersetzungsvorschlägen zum Lemma.}\footnote{\url{https://www.deutschdiachrondigital.de/manual/annotationsebenen}; zuletzt aufgerufen am 12.02.2020.} Konkret heißt dies, dass dasselbe Lemma je nach Kontext unterschiedlich übersetzt wurde.\footnote{Es muss angemerkt werden, dass -- wie mir Sonja Linde aus dem Projekt mitteilte -- die Übersetzungen nicht Teil der wissenschaftlichen Korpusarbeit waren und an vielen Stellen auch andere Lesarten möglich sind, da kein Leitfaden für die Übersetzungen entwickelt wurde. Eine systematische Kontextanalyse der ahd. Token bleibt somit noch ein Forschungsdesiderat.} So wird das Lemma \object{wahsmo} in einigen Kontexten mit \extrans{Frucht} oder \extrans{Schößling, Sproß} übersetzt und verweist damit auf einen konkreten Referenten. In anderen Fällen lautet die Übersetzung \extrans{Frucht, Kraft, Wachstum}, was einer  abstrakten (metaphorischen) Lesart von \object{wahsmo} Rechnung trägt. Umgekehrt kann ein und dieselbe Übersetzung, d.h. ein bestimmtes semantisches Konzept, für unterschiedliche Lemmata stehen, z.B. \hervor{Gleichnis} für ahd. \object{wortbilidi}, \object {gilīhnissi, gilīhnissī} oder \object{rātissa}. Indem man die Belebtheitsannotation auf Basis der Übersetzungen durchführt, kommt man einer kontextspezifischen Belebtheitsannotation also sehr nahe, vgl. zur Illustration Abbildung~\ref{abb:konzept-ddd}. 
+Über den Internetauftritt des Projekts erfährt man: \hervor{Die Ebene \object{translation} enthält eine zum inhaltlichen Kontext des Lemmas passende Auswahl aus den bei \textcite{Splett1993} gegebenen Übersetzungsvorschlägen zum Lemma.}\footnote{\url{https://www.deutschdiachrondigital.de/manual/annotationsebenen}; zuletzt aufgerufen am 12.02.2020.} Konkret heißt dies, dass dasselbe Lemma je nach Kontext unterschiedlich übersetzt wurde.\footnote{Es muss angemerkt werden, dass -- wie mir Sonja Linde aus dem Projekt mitteilte -- die Übersetzungen nicht Teil der wissenschaftlichen Korpusarbeit waren und an vielen Stellen auch andere Lesarten möglich sind, da kein Leitfaden für die Übersetzungen entwickelt wurde. Eine systematische Kontextanalyse der ahd. Token bleibt somit noch ein Forschungsdesiderat.} So wird das Lemma \object{wahsmo} in einigen Kontexten mit \extrans{Frucht} oder \extrans{Schößling, Sproß} übersetzt und verweist damit auf einen konkreten Referenten. In anderen Fällen lautet die Übersetzung \extrans{Frucht, Kraft, Wachstum}, was einer  abstrakten (metaphorischen) Lesart von \object{wahsmo} Rechnung trägt. Umgekehrt kann ein und dieselbe Übersetzung, d.h. ein bestimmtes semantisches Konzept, für unterschiedliche Lemmata stehen, z.B. \hervor{Gleichnis} für ahd. \object{wortbilidi}, \object {gilīhnissi, gilīhnissī} oder \object{rātissa}. Indem man die Belebtheitsannotation auf Basis der Übersetzungen durchführt, kommt man einer kontextspezifischen Belebtheitsannotation also sehr nahe, vgl. zur Illustration Tabellen~\ref{tab:uem:1} und~\ref{tab:uem:2}. 
 Ein wichtiger Vorteil dieser Annotationsform besteht zudem darin, dass große Datenmengen analysiert werden können, da nicht alle Token einzeln annotiert werden müssen und die Annotation auch ohne Althochdeutschkenntnisse erfolgen kann.
 
 
-\begin{figure}[h]
-\begin{center}
-  \includegraphics[width=10 cm]{images/konzept-ddd-sw.jpg}
-\caption {Übersetzungsmöglichkeiten im Altdeutschkorpus}
-\label{abb:konzept-ddd}
-\end{center}
-\end{figure} 
+\begin{table}
+\caption {Übersetzungsmöglichkeit im Altdeutschkorpus (1): Das gleiche Lemma wird unterschiedlich übersetzt.\label{tab:uem:1}}
+\begin{tabular}{llll}
+\lsptoprule
+Token & Lemma & Übersetzung & Belebtheit\\\midrule
+uuahsmo & \ldelim\{{3}{1em}[wahsmo] & Frucht & kon\\
+uuahsmon & & Frucht, Kraft, Wachstum & abst\\
+uuahsmon & & Schößling, Sproß & kon\\
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption {Übersetzungsmöglichkeit im Altdeutschkorpus (2): Unterschiedliche Lemmata werden gleich übersetzt.\label{tab:uem:2}}
+\begin{tabular}{llll}
+\lsptoprule
+Token & Lemma & Übersetzung & Belebtheit\\\midrule
+uuortbilidin & wortbilidi & \rdelim\}{3}{1em}[Gleichnis] & abst\\
+gilihnessi & gilīhnissi, gilīhnissī &  & abst\\
+ratissa & rātissa &  & abst\\
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+% % % \begin{figure}
+% % % \begin{center}
+% % %   \includegraphics[width=10 cm]{images/konzept-ddd-sw.jpg}
+% % % \caption {Übersetzungsmöglichkeiten im Altdeutschkorpus}
+% % % \label{abb:konzept-ddd}
+% % % \end{center}
+% % % \end{figure} 
  
 
 Der Annotationsprozess bestand aus einem zyklischen Wechsel von Annotation, Eva"-lu"-ation, Ergebnisdiskussion und Anpassung des Leitfadens \parencite[entsprechend dem aus der Computerlinguistik bekannten \object{MAMA cycle} (=\,\herkur{Mod"-el-An"-no"-tate-Mo"-del-An"-no"-tate}), beschrieben u.a. in][109]{Pustejovsky2012}.
