@@ -261,7 +261,7 @@ forked edges,for tree={fit=tight}
 \caption {Belebtheitsannotationsschema\label{abb:belebtheitsannotationsschema}}
 \end{sidewaysfigure} 
 
-Vertikal abgebildet sind Ober- und Unterkategorien sowie je ein Beispiel und der zugehörige \object{Tag}. Horizontal finden sich die Belebtheitskategorien und zwar absteigend von links [+belebt] nach rechts [\textminus{}belebt],  wobei teilweise weitere kognitive Faktoren die Unterteilung überlagern: So bildet die Hierarchie auch Aspekte der kulturellen Relevanz ab, da ganz links die sog. \object{übermenschlichen} Referenten stehen. Bezeichnungen für Orte sind prädestiniert dafür, eine niedrige Individualität bzw. Spezifizität aufzuweisen, da sie oft als Adverbial fungieren.\footnote{Bei den Konkreta wurden darüber hinaus Körperteile gesondert annotiert. Diese Gruppe ist allerdings weniger für die Belebtheit relevant, sondern in Bezug auf die Frage, inwiefern der emergierende Artikel bereits in nicht-demonstrativen Definitheitskontexten gebraucht wird (vgl. Abschnitt \ref{sec:pragsem}).} Viele Referenten sind -- wie die Ausführungen in Abschnitt \ref{sec:konabst} gezeigt haben~-- zwischen dem Pol [abstrakt] und [konkret] anzusiedeln. Um dieser Gruppe gerecht zu werden, wurde eine Zwischenkategorie angesetzt. Der Belebtheitsleitfaden enthält eine detaillierte Anleitung mit Beispielen, mit dem Ziel, eine möglichst objektive Zuordnung zu gewährleisten.
+Vertikal abgebildet sind Ober- und Unterkategorien sowie dazugehörige Beispiele und die entsprechende Annotationskategorie. Horizontal zeigt sich die Belebtheitshierarchie und zwar absteigend von links [+belebt] nach rechts [\textminus{}belebt],  wobei teilweise weitere kognitive Faktoren die Unterteilung überlagern: So bildet die Hierarchie auch Aspekte der kulturellen Relevanz ab, da ganz links die sog. \object{übermenschlichen} Referenten stehen. Bezeichnungen für Orte sind prädestiniert dafür, eine niedrige Individualität bzw. Spezifizität aufzuweisen, da sie oft als Adverbial fungieren.\footnote{Bei den Konkreta wurden darüber hinaus Körperteile gesondert annotiert. Diese Gruppe ist allerdings weniger für die Belebtheit relevant, sondern in Bezug auf die Frage, inwiefern der emergierende Artikel bereits in nicht-demonstrativen Definitheitskontexten gebraucht wird (vgl. Abschnitt \ref{sec:pragsem}).} Viele Referenten sind -- wie die Ausführungen in Abschnitt \ref{sec:konabst} gezeigt haben~-- zwischen dem Pol [abstrakt] und [konkret] anzusiedeln. Um dieser Gruppe gerecht zu werden, wurde eine Zwischenkategorie angesetzt. Der Belebtheitsleitfaden enthält eine detaillierte Anleitung mit Beispielen, mit dem Ziel, eine möglichst objektive Zuordnung zu gewährleisten.
 
 Vor der Annotation musste die Frage geklärt werden, ob lexem- oder token"-basiert annotiert wird. Für eine tokenbasierte Annotation spricht, dass so auch Referenzverschiebungen durch Metaphern und Metonymien sowie kontextspezifische Interpretationen einbezogen werden können (\object{die Seiten im Buch} vs. \object{beide Seiten haben recht}). \textcite{Ovrelid2009} zeigt in einem Vergleich von Lexem- und Token\-annotation in schwedischen Wissenschaftstexten, dass solche Referenzverschiebungen mit 1,1\%  allerdings vergleichsweise selten sind.  Bei biblischen Texten, die naturgemäß einen höheren Anteil an Gleichnissen und metaphorischen Bezügen aufweisen, etwa falsche Propheten als \object{Wölfe} oder das Volk als \object{Schafsherde}, sieht die Verteilung jedoch vermutlich anders aus. 
 
@@ -388,38 +388,39 @@ Bei der Belebtheitsannotation wurde der Faktor Relevanz mit der Kategorie "über
 Trotz der recht eindeutigen Dichotomie gibt es durchaus Fälle, die in die Klasse \hervor{unklar} fielen, z.B. \object{Mitbürger} oder \object{Altersgenossen}, welche bei der Analyse dann ausgespart wurden.  Die Annotation erfolgte erneut konzeptbasiert, d.h. die Grundlage bildete eine automatisch generierte Liste von Übersetzungen, die am Ende wieder mitsamt der \hervor{Geschlechtsannotation} den jeweiligen ahd. Token zugeordnet wurden. 
 
 %\subsubsection{(d) Struktur der Nominalphrase}
-
-Um die Struktur der Nominalphrase zu annotieren, wurde eine zufällige Stichprobe\footnote{Zum Vorgehen vgl. das R-Skript \hervor{aufbereitung-rohdaten.R} auf Trollling (Todo: URL einpflegen.} (bestehend aus je 100 Appellativa) aus dem Isidor, dem Tatian und Otfrid genommen. Annotiert wurden Informationen zum Phrasentyp und zur Art und Anzahl von Determinierern sowie Attributen. 
+Um die Struktur der Nominalphrase zu annotieren, wurde eine zufällige Stichprobe\footnote{Zum Vorgehen vgl. das R-Skript \hervor{aufbereitung-rohdaten.R} in \textcite{HZKYL4_2020}} (bestehend aus je 100 Appellativa) aus dem Isidor, dem Tatian und Otfrid genommen. Annotiert wurden Informationen zum Phrasentyp und zur Art und Anzahl von Determinierern sowie Attributen. 
 Bei den Übersetzungstexten wurden zusätzlich das lateinische Token und ggf. Abweichungen in der Struktur (Vorhandensein und Stellung von Determinierern und Attributen) dokumentiert. Beim Tatian wurde zudem vermerkt, auf welche Bibelstelle der ahd. Text Bezug nimmt sowie eine Übersetzung davon angegeben. Außerdem gibt es bei der Annotation Raum für Anmerkungen und Übersetzungsprobleme.
-
 %\subsubsection{(e) Definitheit} 
-Jede der 100 NPs, die auch strukturell annotiert wurden (vgl. Abschnitt (d), wurde einem Definitheitskontext zugewiesen. Es wurden also nicht nur die in der Stichprobe enthaltenen \object{dër}-Belege nach ihrem Definitheitskontext (pragmatische oder semantische Definitheit) analysiert, sondern auch alle Phrasen ohne \object{dër}, um diese anschließend vergleichen zu können. Die Ausprägungen der Variable \hervor{Definitheit} sind in Tabelle~\ref{tab:definitheit} aufgelistet. Die Kategorien basieren auf \textcite{Lobner1985}, \textcite{Himmelmann1996, Himmelmann1997},  \textcite{Diessel1999}, \textcite{Donhauser2012} und \textcite{Szczepaniak2011a}, vgl. die Gebrauchskontexte in Kapitel \ref{chap:demdef}. Fälle, die nicht eindeutig in eine der Kategorien passten, wurden als \hervor{ambig} gekennzeichnet und später als mögliche Brückenkontexte separat analysiert. 
-
+Jede der 100 NPs aus der  Stichprobe wurde zusätzlich einem Definitheitskontext zugewiesen. Es wurden also nicht nur die \object{dër}-Belege nach ihrem Definitheitskontext (pragmatische oder semantische Definitheit) analysiert, sondern auch alle Phrasen ohne \object{dër}, um diese anschließend vergleichen zu können. 
+%Die Ausprägungen der Variable \hervor{Definitheit} sind in Tabelle~\ref{tab:definitheit} aufgelistet.
+Die Kategorien basieren auf den Gebrauchskontexten, die in Kapitel \ref{chap:demdef} erläutert wurden. Fälle, die nicht eindeutig in eine der Kategorien passten, wurden als \hervor{ambig} gekennzeichnet und später als mögliche Brückenkontexte separat analysiert. 
 %\subsubsection{(c) Semantische Rollen} 
-Was Art und Anzahl von semantischen Rollen angeht, die als Kandidaten für eine Annotation in Frage kommen, gilt es eine Auswahl aus der Vielzahl von Theorien (vgl. Abschnitt \ref{sec:partizipanten}) zu treffen: Gerade bei historischen Texten stößt man mit jeder neuen Unterkategorie schnell an die Grenzen dessen, was operationalisierbar und damit annotierbar ist. In der vorliegenden Arbeit wurden daher im Rahmen der NP-Stichprobenannotation, die im Abschnitt zuvor beschrieben wurde, Referenten ganz basal in \hervor{Proto-Agens}, d.h. Subjekte, die willentlich handeln,  eine Bewegung ausführen oder Träger eines Gefühlszustandes sind,  und \hervor{Nicht-Proto-Agens} unterteilt.
+Was Art und Anzahl von semantischen Rollen angeht, die als Kandidaten für eine Annotation in Frage kommen, gilt es eine Auswahl aus der Vielzahl von Theorien (vgl. Abschnitt \ref{sec:partizipanten}) zu treffen: Gerade bei historischen Texten stößt man mit jeder neuen Unterkategorie schnell an die Grenzen dessen, was operationalisierbar und damit annotierbar ist. In der vorliegenden Arbeit wurden daher im Rahmen der NP-Stichprobenannotation, Referenten ganz basal in \hervor{Proto-Agens}, d.h. Subjekte, die willentlich handeln,  eine Bewegung ausführen oder Träger eines Gefühlszustandes sind,  und \hervor{Nicht-Proto-Agens} unterteilt.
+
+Alle in diesem Abschnitt genannten Kategorien sowie Erläuterungen zur Annotation sind in den Annotationsrichtlinien \parencite{HZKYL4_2020} aufgeführt.  
 
 
-\begin{table}
-\centering
-\begin{tabular}{ll}
-\lsptoprule
-Annotation & Kurzbeschreibung  \\ \midrule
-situativ            & Situativer Bezug               \\
-anaphorisch         & Anaphorischer Bezug            \\
-diskurs             & Diskursdeiktischer Bezug      \\
-anamnestisch        & Anamnestischer Bezug           \\
-abstrakt            & Abstrakt-situativer Bezug      \\
-assoziativ          & Assoziativ-anaphorischer Bezug \\
-monoref             & Referent ist monoreferent      \\
-generisch           & Generische Lesart              \\
-nicht-spezifisch        & Unspezifischer Referent           \\
-spezifisch-indefinit          & Spezifischer Referent           \\
-indefinit           & Indefinita     \\
-possessiv           & Possessiver Bezug    \\
-ambig\_kat1\_kat2  & Ambige/Uneindeutige Fälle      \\ \lspbottomrule
-\end{tabular}
-\caption{Annotationsmöglichkeiten für die Variable \hervor{Definitheit}\label{tab:definitheit}}
-\end{table}
+% \begin{table}
+% \centering
+% \begin{tabular}{ll}
+% \lsptoprule
+% Annotation & Kurzbeschreibung  \\ \midrule
+% situativ            & Situativer Bezug               \\
+% anaphorisch         & Anaphorischer Bezug            \\
+% diskurs             & Diskursdeiktischer Bezug      \\
+% anamnestisch        & Anamnestischer Bezug           \\
+% abstrakt            & Abstrakt-situativer Bezug      \\
+% assoziativ          & Assoziativ-anaphorischer Bezug \\
+% monoref             & Referent ist monoreferent      \\
+% generisch           & Generische Lesart              \\
+% nicht-spezifisch        & Unspezifischer Referent           \\
+% spezifisch-indefinit          & Spezifischer Referent           \\
+% indefinit           & Indefinita     \\
+% possessiv           & Possessiver Bezug    \\
+% ambig\_kat1\_kat2  & Ambige/Uneindeutige Fälle      \\ \lspbottomrule
+% \end{tabular}
+% \caption{Annotationsmöglichkeiten für die Variable \hervor{Definitheit}\label{tab:definitheit}}
+% \end{table}
 
 \section{Analysemethoden} \label{sec:analysemethoden}
 
