@@ -246,10 +246,15 @@ Versucht man die Dichotomie \object{konkret-abstrakt} \is{Konkretum}\is{Abstrakt
 \fill[fill=YlOrRd1] (0,0) circle (1.5em) node (abstrakt) [font=\footnotesize] {abstrakt};
 \node [below left=3cm of outercircle.south west,font=\footnotesize] (konkret) {konkret};
 \draw[-{Triangle[]}] (konkret) -- (abstrakt.south);
-\node [above right=2cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {zentrum\\konkreta};
-\node [above right=.25cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {peripherie\\konkreta};
-\node [below right=.25cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {peripherie\\abstrakta};
-\node [below right=2cm and 3cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] {zentrum\\abstrakta};
+\node [above right=2cm and 3.25cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] (zk)  {zentrum\\konkreta};
+\node [above right=.25cm and 3.25cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] (pk) {peripherie\\konkreta};
+\node [below right=.25cm and 3.25cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] (pa) {peripherie\\abstrakta};
+\node [below right=2cm and 3.25cm of outercircle,font=\footnotesize\scshape,text width=1.5cm,align=left] (za)  {zentrum\\abstrakta};
+\draw[YlOrRd5,line width = 3pt] (zk.north west) -- (zk.south west);
+\draw[YlOrRd4,line width = 3pt] (pk.north west) -- (pk.south west);
+\draw[YlOrRd3,line width = 3pt] (pa.north west) -- (pa.west);
+\draw[YlOrRd2,line width = 3pt] (pa.west) -- (pa.south west);
+\draw[YlOrRd1,line width = 3pt] (za.north west) -- (za.south west);
 \end{tikzpicture}\vskip2\baselineskip
 {\footnotesize\begin{tabularx}{\textwidth}{@{}lQlQ@{}}
 \cellcolor{YlOrRd5} & Bezeichnungen für sinnlich komplexe wahrnehmbare Erscheinungen. Gegenstände und Lebewesen und deren Hyperonyme. Beispiele: \textit{Hund}, \textit{Tier}, \textit{Lebewesen}, \textit{Lampe}, \textit{Brot}.
