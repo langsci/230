@@ -1,7 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "Die Entwicklung des Definitartikels im Althochdeutschen",
-		"authors": [{"name": "Johanna Flick"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2020-03-25T14:05:13.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Johanna Flick"}], "title": "Die Entwicklung des Definitartikels im Althochdeutschen", "publishedAt": "2020-03-25T14:05:13.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"title": "Die Entwicklung des Definitartikels im Althochdeutschen", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2020-09-01T13:36:42.444733", "authors": [{"name": "Johanna Flick"}]}]}
